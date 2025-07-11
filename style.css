@@ -67,6 +67,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 1em;
+  padding-bottom: 1em;
 }
 
 .logo {
@@ -74,4 +75,10 @@ footer {
   height: 60px;
   border-radius: 50%;
   background: white;
+}
+
+.title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
 }
