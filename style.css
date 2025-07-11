@@ -61,3 +61,17 @@ footer {
   padding: 1em;
   margin-top: 3em;
 }
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: white;
+}
