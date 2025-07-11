@@ -1,12 +1,13 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f6f8;
-  color: #333;
+  background: #FDF6E3;
+  color: #002868;
 }
 
 header {
-  background: #002366;
+  background: #002868;
   color: white;
   padding: 1.5em;
   text-align: center;
@@ -18,9 +19,13 @@ nav {
 
 nav a {
   margin: 0 1em;
-  color: white;
+  color: #C7930B;
   text-decoration: none;
   font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -38,14 +43,19 @@ main {
 
 .card {
   background: white;
+  border: 2px solid #002868;
   padding: 1em;
   border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
   width: 250px;
 }
 
+.card h3 {
+  color: #C7930B;
+}
+
 footer {
-  background: #002366;
+  background: #002868;
   color: white;
   text-align: center;
   padding: 1em;
