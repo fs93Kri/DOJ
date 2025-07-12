@@ -1,30 +1,19 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+
+.navbar {
+  background-color: #1d3557;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px 0;
 }
-nav {
-    background-color: #1a2b4c;
-    padding: 10px;
+.navbar a {
+  display: inline-block;
+  color: white;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
 }
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-nav ul li {
-    margin: 0 10px;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-nav ul li a.active {
-    text-decoration: underline;
-}
-main {
-    padding: 30px;
+.navbar a:hover {
+  background-color: #457b9d;
 }
