@@ -2,119 +2,74 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Prawo - DOJ</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #1a2b4c;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-        }
-        main {
-            padding: 40px;
-            max-width: 1000px;
-            margin: auto;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
-        }
-        h1 {
-            text-align: center;
-            color: #1a2b4c;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 30px;
-        }
-        th, td {
-            text-align: left;
-            padding: 15px;
-            vertical-align: top;
-            font-size: 16px;
-        }
-        tr:nth-child(even) {
-            background-color: #f4f4f9;
-        }
-        td a {
-            text-decoration: none;
-            color: #003366;
-            font-weight: bold;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Prawo | Department of Justice</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html">Strona Główna</a>
-            <a href="ogloszenia.html">Ogłoszenia</a>
-            <a href="prawo.html">Prawo</a>
-            <a href="rekrutacja.html">Rekrutacja</a>
-            <a href="kadra.html">Kadra</a>
-            <a href="dokumenty.html">Dokumenty i Formularze</a>
-            <a href="sprawy_sadu.html">Sprawy Sądu</a>
-            <a href="api.html">DOJ API</a>
-            <a href="faq.html">FAQ</a>
-            <a href="kontakt.html">Kontakt</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="ogloszenia.html">Ogłoszenia</a></li>
+                <li><a href="prawo.html" class="active">Prawo</a></li>
+                <li><a href="rekrutacja.html">Rekrutacja</a></li>
+                <li><a href="kadra.html">Kadra</a></li>
+                <li><a href="dokumenty.html">Dokumenty i Formularze</a></li>
+                <li><a href="sprawy.html">Sprawy Sądu</a></li>
+                <li><a href="api.html">DOJ API</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
+
+    <main class="container">
         <h1>Akty Prawne</h1>
-        <table>
+        <p>Wszystkie dokumenty dostępne są zarówno w pełnej wersji, jak i w wersji skróconej „w pigułce”.</p>
+        <table class="law-table">
             <tr>
-                <th>Dokument</th>
-                <th>Wersja w Pigułce</th>
+                <th>Pełny dokument</th>
+                <th>Wersja w pigułce</th>
             </tr>
             <tr>
-                <td><a href="#">Konstytucja</a></td>
-                <td><a href="#">Konstytucja w Pigułce</a></td>
+                <td><a href="konstytucja.html" target="_blank">Konstytucja</a></td>
+                <td><a href="konstytucja_w_pigulce.html" target="_blank">Konstytucja w Pigułce</a></td>
             </tr>
             <tr>
-                <td><a href="#">Kodeks Karny</a></td>
-                <td><a href="#">Kodeks Karny w Pigułce</a></td>
+                <td><a href="kodeks_karny.html" target="_blank">Kodeks Karny</a></td>
+                <td><a href="kodeks_karny_w_pigulce.html" target="_blank">Kodeks Karny w Pigułce</a></td>
             </tr>
             <tr>
-                <td><a href="#">Kodeks Cywilny</a></td>
-                <td><a href="#">Kodeks Cywilny w Pigułce</a></td>
+                <td><a href="kodeks_cywilny.html" target="_blank">Kodeks Cywilny</a></td>
+                <td><a href="kodeks_cywilny_w_pigulce.html" target="_blank">Kodeks Cywilny w Pigułce</a></td>
             </tr>
             <tr>
-                <td><a href="#">Kodeks Postępowania Cywilnego</a></td>
-                <td><a href="#">Kodeks Postępowania Cywilnego w Pigułce</a></td>
+                <td><a href="kodeks_postepowania_cywilnego.html" target="_blank">Kodeks Postępowania Cywilnego</a></td>
+                <td><a href="kodeks_postepowania_cywilnego_w_pigulce.html" target="_blank">Kodeks Postępowania Cywilnego w Pigułce</a></td>
             </tr>
             <tr>
-                <td><a href="#">Kodeks Pracy</a></td>
-                <td><a href="#">Kodeks Pracy w Pigułce</a></td>
+                <td><a href="kodeks_pracy.html" target="_blank">Kodeks Pracy</a></td>
+                <td><a href="kodeks_pracy_w_pigulce.html" target="_blank">Kodeks Pracy w Pigułce</a></td>
             </tr>
             <tr>
-                <td><a href="#">Ustawa o Służbach Publicznych</a></td>
-                <td><a href="#">Ustawa o Służbach Publicznych w Pigułce</a></td>
+                <td><a href="ustawa_sluzby_publiczne.html" target="_blank">Ustawa o Służbach Publicznych</a></td>
+                <td><a href="ustawa_sluzby_publiczne_w_pigulce.html" target="_blank">Ustawa o Służbach Publicznych w Pigułce</a></td>
             </tr>
             <tr>
-                <td><a href="#">Ustawa o Broni i Amunicji</a></td>
-                <td><a href="#">Ustawa o Broni i Amunicji w Pigułce</a></td>
+                <td><a href="ustawa_bron.html" target="_blank">Ustawa o Broni i Amunicji</a></td>
+                <td><a href="ustawa_bron_w_pigulce.html" target="_blank">Ustawa o Broni i Amunicji w Pigułce</a></td>
             </tr>
             <tr>
-                <td><a href="#">Kodeks Morski</a></td>
-                <td><a href="#">Kodeks Morski w Pigułce</a></td>
+                <td><a href="kodeks_morski.html" target="_blank">Kodeks Morski</a></td>
+                <td><a href="kodeks_morski_w_pigulce.html" target="_blank">Kodeks Morski w Pigułce</a></td>
             </tr>
         </table>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Department of Justice — San Andreas RP</p>
+    </footer>
 </body>
 </html>
