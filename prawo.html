@@ -1,95 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Prawo | Department of Justice</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Prawo - DOJ</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f2f4f8;
             margin: 0;
-            background-color: #f1f4f9;
+            padding: 0;
         }
-        .navbar {
-            background-color: #0d2c54;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        .navbar a {
+        header {
+            background-color: #1a237e;
             color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-            font-size: 14px;
-        }
-        .navbar a:hover {
-            background-color: #1b3f75;
+            padding: 15px 30px;
+            font-size: 24px;
         }
         .container {
-            padding: 30px;
+            padding: 40px;
         }
-        h2 {
-            color: #0d2c54;
+        h1 {
+            text-align: center;
+            color: #1a237e;
         }
         table {
-            width: 100%;
-            margin-top: 25px;
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        th, td {
-            padding: 10px;
-            text-align: left;
+        td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #ccc;
         }
-        a {
-            color: #003366;
+        td a {
             text-decoration: none;
+            color: #1a237e;
+            font-weight: bold;
         }
-        a:hover {
+        td a:hover {
             text-decoration: underline;
         }
-        footer {
-            background-color: #0d2c54;
-            color: white;
-            text-align: center;
-            padding: 12px 0;
-            margin-top: 50px;
+        @media screen and (max-width: 768px) {
+            table {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">Strona Główna</a>
-        <a href="ogloszenia.html">Ogłoszenia</a>
-        <a href="prawo.html">Prawo</a>
-        <a href="rekrutacja.html">Rekrutacja</a>
-        <a href="kadra.html">Kadra</a>
-        <a href="dokumenty.html">Dokumenty i Formularze</a>
-        <a href="sprawy_sadu.html">Sprawy Sądu</a>
-        <a href="api.html">DOJ API</a>
-        <a href="faq.html">FAQ</a>
-        <a href="kontakt.html">Kontakt</a>
-    </div>
-
+    <header>Departament Sprawiedliwości - Prawo</header>
     <div class="container">
-        <h2>Akty Prawne</h2>
-        <p>Wszystkie dokumenty dostępne są zarówno w pełnej wersji, jak i w wersji skróconej „w pigułce”.</p>
+        <h1>Akty Prawne</h1>
         <table>
-            <tr>
-                <th>Pełny dokument</th>
-                <th>Wersja w pigułce</th>
-            </tr>
             <tr>
                 <td><a href="konstytucja.html" target="_blank">Konstytucja</a></td>
                 <td><a href="konstytucja_w_pigulce.html" target="_blank">Konstytucja w Pigułce</a></td>
             </tr>
             <tr>
-                <td><a href="#">Kodeks Karny</a></td>
-                <td><a href="#">Kodeks Karny w Pigułce</a></td>
+                <td><a href="kodeks_karny.html" target="_blank">Kodeks Karny</a></td>
+                <td><a href="kodeks_karny_w_pigulce.html" target="_blank">Kodeks Karny w Pigułce</a></td>
             </tr>
             <tr>
-                <td><a href="#">Kodeks Cywilny</a></td>
-                <td><a href="#">Kodeks Cywilny w Pigułce</a></td>
+                <td><a href="kodeks_cywilny.html" target="_blank">Kodeks Cywilny</a></td>
+                <td><a href="kodeks_cywilny_w_pigulce.html" target="_blank">Kodeks Cywilny w Pigułce</a></td>
             </tr>
             <tr>
                 <td><a href="#">Kodeks Postępowania Cywilnego</a></td>
@@ -113,9 +89,5 @@
             </tr>
         </table>
     </div>
-
-    <footer>
-        © 2025 Department of Justice — San Andreas RP
-    </footer>
 </body>
 </html>
