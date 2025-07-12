@@ -1,45 +1,122 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Department of Justice</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+    }
+
+    header {
+      background-color: #002866;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .logo-container h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav > ul > li {
+      margin-left: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 10px;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #001a47;
+      border-radius: 5px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #002866;
+      min-width: 200px;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+      padding: 10px 15px;
+    }
+
+    nav li:hover .dropdown-content {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="doj_logo_cropped.png" alt="DOJ Logo" class="logo" />
-      <span class="title">Department of Justice</span>
-    </div>
-    <nav>
-      <a href="#">Strona Główna</a>
-      <a href="#">Ogłoszenia</a>
-      <a href="#">Prawo</a>
-      <a href="#">Rekrutacja</a>
-      <a href="#">Kontakt</a>
-    </nav>
-  </header>
 
-  <main>
-    <h2>Wspieramy sprawiedliwość w stanie San Andreas</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Rekrutacja</h3>
-        <p>Więcej informacji w kategorii Rekrutacja</p>
-      </div>
-      <div class="card">
-        <h3>Nowe przepisy</h3>
-        <p>Więcej informacji w kategorii Prawo</p>
-      </div>
-      <div class="card">
-        <h3>Ostatnia Aktualizacja Strony</h3>
-        <p>11.07.2025 | 12:00</p>
-      </div>
-    </div>
-  </main>
+<header>
+  <div class="logo-container">
+    <img src="logo.png" alt="DOJ Logo">
+    <h1>Department of Justice</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Strona główna</a></li>
+      <li><a href="#">Ogłoszenia</a></li>
+      <li>
+        <a href="#">Prawo ▾</a>
+        <div class="dropdown-content">
+          <a href="#">Konstytucja</a>
+          <a href="#">Kodeks Cywilny</a>
+          <a href="#">Kodeks Karny</a>
+          <a href="#">Kodeks Administracyjny</a>
+          <a href="#">Ustawa o Broni i Amunicji</a>
+          <a href="#">Inne ustawy</a>
+        </div>
+      </li>
+      <li><a href="#">Rekrutacja</a></li>
+      <li><a href="#">Sędziowie</a></li>
+      <li><a href="#">Prokuratorzy</a></li>
+      <li><a href="#">Adwokatura</a></li>
+      <li><a href="#">Dokumenty i Formularze</a></li>
+      <li><a href="#">Sprawy Sądu</a></li>
+      <li><a href="#">Ewidencja Wyroków</a></li>
+      <li><a href="#">DOJ API</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <footer>
-    &copy; 2025 Department of Justice - Los Santos
-  </footer>
 </body>
 </html>
