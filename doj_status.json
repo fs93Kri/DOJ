@@ -1,0 +1,17 @@
+[
+    {
+        "name": "S\u0119dzia Kowalski",
+        "role": "S\u0119dzia",
+        "online": true
+    },
+    {
+        "name": "Prok. Malinowska",
+        "role": "Prokurator",
+        "online": false
+    },
+    {
+        "name": "Adw. Novak",
+        "role": "Adwokat",
+        "online": true
+    }
+]

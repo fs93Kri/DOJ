@@ -1,8 +1,9 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
 }
 
 .header {
@@ -22,7 +23,7 @@ body {
 }
 
 .title {
-    font-size: 24px;
+    font-size: 26px;
     margin: 0;
 }
 
@@ -36,7 +37,7 @@ body {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    background-color: #032B64;
+    background-color: #021E4B;
 }
 
 .menu > li {
@@ -45,7 +46,7 @@ body {
 
 .menu > li > a {
     display: block;
-    padding: 12px 16px;
+    padding: 10px 16px;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -76,4 +77,34 @@ body {
 
 .dropdown:hover .submenu {
     display: block;
+}
+
+.slider {
+    background-color: #00509E;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 24px;
+    animation: fade 12s infinite;
+}
+
+@keyframes fade {
+    0%, 100% {opacity: 0}
+    10%, 90% {opacity: 1}
+}
+
+.notice, .rekrutacja-banner, .search-section, .status-section, .aktualnosc, .historia {
+    padding: 30px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #032B64;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Department of Justice</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="branding">
-            <img src="doj_logo_cropped.png" alt="DOJ Logo" class="logo"/>
+            <img src="logo.png" alt="DOJ Logo" class="logo"/>
             <h1 class="title">Department of Justice</h1>
         </div>
         <nav class="navbar">
@@ -35,9 +36,51 @@
                 <li><a href="#">Sprawy Sądu</a></li>
                 <li><a href="#">Ewidencja Wyroków</a></li>
                 <li><a href="#">DOJ API</a></li>
+                <li><a href="#">FAQ</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
     </header>
+
+    <section class="slider">
+        <div class="slide">Prawo i Sprawiedliwość</div>
+        <div class="slide">Działamy na rzecz San Andreas</div>
+        <div class="slide">Gwarancja równości i uczciwości</div>
+    </section>
+
+    <section class="notice">
+        <h2>📢 Ostatnie Ogłoszenie</h2>
+        <p>Rusza nowa rekrutacja do struktur Department of Justice. Dołącz do nas już dziś!</p>
+    </section>
+
+    <section class="rekrutacja-banner">
+        <p>🔥 Trwa nabór do DOJ! <a href="#">Zgłoś się teraz »</a></p>
+    </section>
+
+    <section class="search-section">
+        <h2>🔎 Wyszukaj sprawę po numerze</h2>
+        <input type="text" id="caseInput" placeholder="np. DOJ-2025-001">
+        <button onclick="searchCase()">Szukaj</button>
+    </section>
+
+    <section class="status-section">
+        <h2>🟢 Status Online DOJ</h2>
+        <ul id="statusList"></ul>
+    </section>
+
+    <section class="aktualnosc">
+        <h2>📰 Ostatnia aktualność</h2>
+        <p>Weszła w życie ustawa o nowym trybie apelacyjnym. Zobacz co się zmieniło…</p>
+    </section>
+
+    <section class="historia">
+        <h2>📜 Historia DOJ</h2>
+        <p>Department of Justice powstał z myślą o budowie sprawiedliwego i przejrzystego systemu prawnego w stanie San Andreas...</p>
+        <a href="#">Czytaj więcej »</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Department of Justice – San Andreas RP</p>
+    </footer>
 </body>
 </html>
