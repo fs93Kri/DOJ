@@ -1,122 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Department of Justice</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f7fa;
-    }
-
-    header {
-      background-color: #002866;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo-container {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo-container img {
-      height: 50px;
-      margin-right: 15px;
-    }
-
-    .logo-container h1 {
-      font-size: 24px;
-      margin: 0;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav li {
-      position: relative;
-    }
-
-    nav > ul > li {
-      margin-left: 20px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 8px 10px;
-      display: block;
-    }
-
-    nav a:hover {
-      background-color: #001a47;
-      border-radius: 5px;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #002866;
-      min-width: 200px;
-      top: 100%;
-      left: 0;
-      z-index: 1;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    .dropdown-content a {
-      padding: 10px 15px;
-    }
-
-    nav li:hover .dropdown-content {
-      display: block;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Department of Justice</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<header>
-  <div class="logo-container">
-    <img src="logo.png" alt="DOJ Logo">
-    <h1>Department of Justice</h1>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="#">Strona główna</a></li>
-      <li><a href="#">Ogłoszenia</a></li>
-      <li>
-        <a href="#">Prawo ▾</a>
-        <div class="dropdown-content">
-          <a href="#">Konstytucja</a>
-          <a href="#">Kodeks Cywilny</a>
-          <a href="#">Kodeks Karny</a>
-          <a href="#">Kodeks Administracyjny</a>
-          <a href="#">Ustawa o Broni i Amunicji</a>
-          <a href="#">Inne ustawy</a>
+    <header class="header">
+        <div class="branding">
+            <img src="doj_logo_cropped.png" alt="DOJ Logo" class="logo"/>
+            <h1 class="title">Department of Justice</h1>
         </div>
-      </li>
-      <li><a href="#">Rekrutacja</a></li>
-      <li><a href="#">Sędziowie</a></li>
-      <li><a href="#">Prokuratorzy</a></li>
-      <li><a href="#">Adwokatura</a></li>
-      <li><a href="#">Dokumenty i Formularze</a></li>
-      <li><a href="#">Sprawy Sądu</a></li>
-      <li><a href="#">Ewidencja Wyroków</a></li>
-      <li><a href="#">DOJ API</a></li>
-      <li><a href="#">Kontakt</a></li>
-    </ul>
-  </nav>
-</header>
-
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Ogłoszenia</a></li>
+                <li class="dropdown">
+                    <a href="#">Prawo</a>
+                    <ul class="submenu">
+                        <li><a href="#">Konstytucja</a></li>
+                        <li><a href="#">Kodeks Cywilny</a></li>
+                        <li><a href="#">Kodeks Karny</a></li>
+                        <li><a href="#">Kodeks Administracyjny</a></li>
+                        <li><a href="#">Ustawa o Broni i Amunicji</a></li>
+                        <li><a href="#">Inne ustawy</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Rekrutacja</a></li>
+                <li><a href="#">Sędziowie</a></li>
+                <li><a href="#">Prokuratorzy</a></li>
+                <li><a href="#">Adwokatura</a></li>
+                <li><a href="#">Dokumenty i Formularze</a></li>
+                <li><a href="#">Sprawy Sądu</a></li>
+                <li><a href="#">Ewidencja Wyroków</a></li>
+                <li><a href="#">DOJ API</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
