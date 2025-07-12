@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Strona Główna DOJ</title>
+    <title>DOJ API</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,14 +15,19 @@
             <li><a href="kadra.html">Kadra</a></li>
             <li><a href="formularze.html">Dokumenty i Formularze</a></li>
             <li><a href="sprawy.html">Sprawy Sądu</a></li>
-            <li><a href="api.html">DOJ API</a></li>
+            <li><a href="api.html" class="active">DOJ API</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Strona Główna DOJ</h1>
-        <p>Witamy w Departamencie Sprawiedliwości stanu San Andreas.</p>
+        <h1>DOJ API</h1>
+        <p>Dostęp do danych DOJ przez API.</p>
+        <ul>
+            <li><code>GET /api/sedziowie</code> – Lista wszystkich sędziów</li>
+            <li><code>GET /api/sprawy</code> – Spis spraw</li>
+            <li><code>GET /api/formularze</code> – Lista formularzy online</li>
+        </ul>
     </main>
 </body>
 </html>
