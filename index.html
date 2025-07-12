@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -5,28 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Department of Justice</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header class="header">
-        <div class="branding">
+        <div class="header-logo-title">
             <img src="logo.png" alt="DOJ Logo" class="logo"/>
-            <h1 class="title">Department of Justice</h1>
+            <h1>Department of Justice</h1>
         </div>
         <nav class="navbar">
-            <ul class="menu">
+            <ul>
                 <li><a href="#">Strona główna</a></li>
                 <li><a href="#">Ogłoszenia</a></li>
                 <li class="dropdown">
                     <a href="#">Prawo</a>
-                    <ul class="submenu">
-                        <li><a href="#">Konstytucja</a></li>
-                        <li><a href="#">Kodeks Cywilny</a></li>
-                        <li><a href="#">Kodeks Karny</a></li>
-                        <li><a href="#">Kodeks Administracyjny</a></li>
-                        <li><a href="#">Ustawa o Broni i Amunicji</a></li>
-                        <li><a href="#">Inne ustawy</a></li>
-                    </ul>
+                    <div class="dropdown-content">
+                        <a href="#">Konstytucja</a>
+                        <a href="#">Kodeks Cywilny</a>
+                        <a href="#">Kodeks Karny</a>
+                        <a href="#">Kodeks Administracyjny</a>
+                        <a href="#">Ustawa o Broni i Amunicji</a>
+                        <a href="#">Inne ustawy</a>
+                    </div>
                 </li>
                 <li><a href="#">Rekrutacja</a></li>
                 <li><a href="#">Sędziowie</a></li>
@@ -42,45 +42,39 @@
         </nav>
     </header>
 
-    <section class="slider">
-        <div class="slide">Prawo i Sprawiedliwość</div>
-        <div class="slide">Działamy na rzecz San Andreas</div>
-        <div class="slide">Gwarancja równości i uczciwości</div>
-    </section>
+    <main class="main-content">
+        <section class="hero">
+            <h2>Wspieramy sprawiedliwość w stanie San Andreas</h2>
+        </section>
+        <section class="grid-section">
+            <div class="grid-box">Ostatnie Ogłoszenie</div>
+            <div class="grid-box">Nabór do DOJ - <a href="#">Zgłoś się teraz</a></div>
+            <div class="grid-box">
+                <label for="caseSearch">Wyszukaj sprawę po numerze:</label>
+                <input id="caseSearch" placeholder="np. DOJ-2625-001" />
+                <button>Szukaj</button>
+            </div>
+        </section>
+        <section class="status">
+            <h3>Status Online DOJ</h3>
+            <ul>
+                <li>⚖️ Sędzia Kowalski – <span class="online">Online</span></li>
+                <li>⚖️ Prok. Malinowska – <span class="offline">Offline</span></li>
+                <li>⚖️ Adv. Novak – <span class="online">Online</span></li>
+            </ul>
+        </section>
+        <section class="aktualnosci">
+            <h3>Ostatnia aktualność</h3>
+            <p>Weszła w życie ustawa o nowym trybie apelacyjnym.</p>
+        </section>
+        <section class="historia">
+            <h3>Historia DOJ</h3>
+            <p>Department of Justice powstał z myślą o budowie sprawiedliwego i przejrzystego systemu prawnego w stanie San Andreas.</p>
+        </section>
+    </main>
 
-    <section class="notice">
-        <h2>📢 Ostatnie Ogłoszenie</h2>
-        <p>Rusza nowa rekrutacja do struktur Department of Justice. Dołącz do nas już dziś!</p>
-    </section>
-
-    <section class="rekrutacja-banner">
-        <p>🔥 Trwa nabór do DOJ! <a href="#">Zgłoś się teraz »</a></p>
-    </section>
-
-    <section class="search-section">
-        <h2>🔎 Wyszukaj sprawę po numerze</h2>
-        <input type="text" id="caseInput" placeholder="np. DOJ-2025-001">
-        <button onclick="searchCase()">Szukaj</button>
-    </section>
-
-    <section class="status-section">
-        <h2>🟢 Status Online DOJ</h2>
-        <ul id="statusList"></ul>
-    </section>
-
-    <section class="aktualnosc">
-        <h2>📰 Ostatnia aktualność</h2>
-        <p>Weszła w życie ustawa o nowym trybie apelacyjnym. Zobacz co się zmieniło…</p>
-    </section>
-
-    <section class="historia">
-        <h2>📜 Historia DOJ</h2>
-        <p>Department of Justice powstał z myślą o budowie sprawiedliwego i przejrzystego systemu prawnego w stanie San Andreas...</p>
-        <a href="#">Czytaj więcej »</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Department of Justice – San Andreas RP</p>
+    <footer class="footer">
+        © 2025 Department of Justice – San Andreas RP
     </footer>
 </body>
 </html>
