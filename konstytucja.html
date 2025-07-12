@@ -3,354 +3,125 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Konstytucja</title>
+    <title>Konstytucja - Department of Justice</title>
     <style>
         body {
-            display: flex;
-            font-family: Arial, sans-serif;
             margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
         }
+
         nav {
-            width: 25%;
-            max-width: 300px;
-            background-color: #f2f2f2;
+            width: 280px;
+            background-color: #1a2a4f;
+            color: white;
             padding: 20px;
             height: 100vh;
             overflow-y: auto;
-            position: sticky;
-            top: 0;
+            box-sizing: border-box;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+
+        nav h2 {
+            font-size: 18px;
+            margin-top: 0;
         }
-        nav li {
-            margin-bottom: 10px;
-        }
+
         nav a {
+            display: block;
+            color: #ccc;
             text-decoration: none;
-            color: #007BFF;
+            margin: 8px 0;
+            font-size: 14px;
         }
+
         nav a:hover {
-            text-decoration: underline;
+            color: white;
+            font-weight: bold;
         }
+
         main {
-            padding: 30px;
-            width: 75%;
-            overflow-y: auto;
+            flex-grow: 1;
+            padding: 40px;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
-        section {
-            margin-bottom: 40px;
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #1a2a4f;
         }
+
         h2 {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
+            font-size: 20px;
+            margin-top: 40px;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-top: 30px;
+            color: #444;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #222;
+        }
+
+        .chapter {
+            margin-bottom: 40px;
         }
     </style>
 </head>
 <body>
     <nav>
-        <h3>Spis Treści</h3>
-        <ul>
-            <li><a href="#section-0">Konstytucja</a></li>
-<li><a href="#section-1">Spis Rozdziałów</a></li>
-<li><a href="#section-2">Rozdział I Podstawowe zasady ustrojowe</a></li>
-<li><a href="#section-3">Art. 1. Suwerenność i ustrój</a></li>
-<li><a href="#section-4">Art. 2. Źródła władzy</a></li>
-<li><a href="#section-5">Art. 3. Język urzędowy</a></li>
-<li><a href="#section-6">Art. 4. Równość wobec prawa</a></li>
-<li><a href="#section-7">Art. 5. Obowiązki obywatelskie</a></li>
-<li><a href="#section-8">Rozdział II Prawa i wolności obywateli.</a></li>
-<li><a href="#section-9">Art. 6. Prawo do życia i wolności</a></li>
-<li><a href="#section-10">Art. 7. Nietykalność osobista i wolność od bezprawnego zatrzymania</a></li>
-<li><a href="#section-11">Art. 8. Prywatność, godność i własność</a></li>
-<li><a href="#section-12">Art. 9. Prawo do obrony i sprawiedliwego procesu</a></li>
-<li><a href="#section-13">Art. 10. Wolność słowa, wyznania i zgromadzeń</a></li>
-<li><a href="#section-14">Rozdział III Władze Stanowe</a></li>
-<li><a href="#section-15">Art. 11. Zasada trójpodziału władzy</a></li>
-<li><a href="#section-16">Art. 12. Senat San Andreas (Władza ustawodawcza)</a></li>
-<li><a href="#section-17">Art. 13.  Gubernator (Władza wykonawcza)</a></li>
-<li><a href="#section-18">Art. 14. Sądownictwo (Władza sądownicza)</a></li>
-<li><a href="#section-19">Art. 15. Odpowiedzialność władz publicznych i kontrola konstytucyjna</a></li>
-<li><a href="#section-20">Rozdział IV Immunitety i ochrona urzędników publicznych</a></li>
-<li><a href="#section-21">Art. 16. Immunitet członków DOJ</a></li>
-<li><a href="#section-22">Art. 17. Tryb uchylenia immunitetu</a></li>
-<li><a href="#section-23">Art. 18. Zakaz interwencji wobec członka zarządu DOJ bez zgody</a></li>
-<li><a href="#section-24">Rozdział V Administracja publiczna</a></li>
-<li><a href="#section-25">Art. 19. Departamenty stanowe: LSPD, EMS, IRS, USC itd.</a></li>
-<li><a href="#section-26">Art. 20. Nadawanie uprawnień, zwierzchnictwo i obowiązki</a></li>
-<li><a href="#section-27">Art. 21. Zasady działania instytucji wykonawczych</a></li>
-<li><a href="#section-28">Rozdział VI Trybunał konstytucyjny</a></li>
-<li><a href="#section-29">Art. 22. Skład i powoływanie</a></li>
-<li><a href="#section-30">Art. 23. Kompetencje i tryb orzekania</a></li>
-<li><a href="#section-31">Art. 24. Zaskarżanie aktów niezgodnych z Konstytucją</a></li>
-<li><a href="#section-32">Art. 25. Zaskarżanie aktów niezgodnych z Konstytucją</a></li>
-<li><a href="#section-33">Rozdział VII Stan wyjątkowy i nadzwyczajne procedury</a></li>
-<li><a href="#section-34">Art. 26. Ogłoszenie stanu wyjątkowego</a></li>
-<li><a href="#section-35">Art. 27. Zakres uprawnień Gubernatora</a></li>
-<li><a href="#section-36">Art. 28. Kontrola i odwołanie stanu wyjątkowego</a></li>
-<li><a href="#section-37">Rozdział VIII Przysięgi urzędnicze i odpowiedzialność</a></li>
-<li><a href="#section-38">Art. 29. Treść przysięgi</a></li>
-<li><a href="#section-39">Art. 30. Odpowiedzialność za złamanie przysięgi</a></li>
-<li><a href="#section-40">Art. 31. Procedura dyscyplinarna</a></li>
-<li><a href="#section-41">Rozdział IX Finanse publiczne i gospodarka</a></li>
-<li><a href="#section-42">Art. 32. Budżet stanu</a></li>
-<li><a href="#section-43">Art. 33. Ustawa podatkowa (odniesienie)</a></li>
-<li><a href="#section-44">Art. 34. Organy nadzoru finansowego</a></li>
-<li><a href="#section-45">Rozdział X Postanowienia końcowe</a></li>
-<li><a href="#section-46">Art. 35. Wejście w życie Konstytucji</a></li>
-<li><a href="#section-47">Art. 36. Zmiany Konstytucji  procedura</a></li>
-<li><a href="#section-48">Art. 37. Hierarchia aktów prawnych</a></li>
-
-        </ul>
+        <h2>Spis Treści</h2>
+        <a href="#wstep">Konstytucja</a>
+        <a href="#rozdzial1">Rozdział I Podstawowe zasady ustrojowe</a>
+        <a href="#art1">Art. 1. Suwerenność i ustrój</a>
+        <a href="#art2">Art. 2. Źródła władzy</a>
+        <a href="#art3">Art. 3. Język urzędowy</a>
+        <a href="#art4">Art. 4. Władza ustawodawcza</a>
+        <a href="#art5">Art. 5. Władza wykonawcza</a>
+        <a href="#art6">Art. 6. Władza sądownicza</a>
     </nav>
     <main>
-        
-    <section id="section-0">
-        <h2>Konstytucja</h2>
-        <p>My, Obywatele Stanu San Andreas, zjednoczeni wolą stworzenia sprawiedliwego, bezpiecznego i demokratycznego społeczeństwa,<br> pragnąc chronić podstawowe prawa i wolności jednostki,<br> ustanowić rządy prawa, zapewnić pokój społeczny, rozwój gospodarczy i poszanowanie dla instytucji publicznych,<br> świadomi historii naszego stanu oraz odpowiedzialności za jego przyszłość,<br> działając w duchu wolności, równości i solidarności,<br>uchwalamy niniejszą Konstytucję jako najwyższy akt prawny Stanu San Andreas,<br> który stanowi fundament dla życia publicznego, systemu sprawiedliwości i zasad współżycia społecznego,<br> obowiązujący wszystkie instytucje, obywateli i osoby przebywające na jego terytorium.<br></p>
-    </section>
-    
-    <section id="section-1">
+        <h1 id="wstep">Konstytucja</h1>
+        <p>My, Obywatele Stanu San Andreas, zjednoczeni wolą stworzenia sprawiedliwego, bezpiecznego i demokratycznego społeczeństwa,
+        pragniemy chronić podstawowe prawa i wolności jednostki...</p>
+
         <h2>Spis Rozdziałów</h2>
-        <p>Rozdział I Podstawowe zasady ustrojowe.<br>Rozdział II Prawa i wolności obywateli.<br>Rozdział III Władze stanowe.<br>Rozdział IV Immunitety i ochrona urzędników publicznych.<br>Rozdział V Administracja publiczna.<br>Rozdział VI Trybunał konstytucyjny.<br>Rozdział VII Stan wyjątkowy i nadzwyczajne procedury<br>Rozdział VIII Przysięgi urzędnicze i odpowiedzialność.<br>Rozdział IX Finanse publiczne i gospodarka<br>Rozdział X Postanowienia końcowe.<br></p>
-    </section>
-    
-    <section id="section-2">
-        <h2>Rozdział I Podstawowe zasady ustrojowe</h2>
-        <p></p>
-    </section>
-    
-    <section id="section-3">
-        <h2>Art. 1. Suwerenność i ustrój</h2>
-        <p>Stan San Andreas jest demokratycznym, republikańskim i samorządnym bytem publicznoprawnym, funkcjonującym w ramach Zjednoczonych Stanów Ameryki.<br>Stan San Andreas posiada własne instytucje prawodawcze, wykonawcze i sądownicze, niezależne od władz federalnych w zakresie nieuregulowanym przez prawo federalne.<br>Suwerenność Stanu wyraża się w prawie do stanowienia prawa lokalnego, organizowania własnej administracji, egzekwowania porządku publicznego oraz niezależnego systemu sądowniczego.<br>System ustrojowy Stanu oparty jest na zasadzie trójpodziału władzy, obejmującej:<br>Władzę ustawodawczą, sprawowaną przez Senat San Andreas,<br>Władzę wykonawczą, sprawowaną przez Gubernatora oraz powołane instytucje,<br>Władzę sądowniczą, sprawowaną przez niezawisłe sądy stanowe.<br>Ustrój Stanu opiera się na zasadach: demokracji, równości obywateli, niezależności władz, jawności życia publicznego oraz poszanowania praw jednostki.<br></p>
-    </section>
-    
-    <section id="section-4">
-        <h2>Art. 2. Źródła władzy</h2>
-        <p>Władza publiczna w San Andreas pochodzi od Obywateli i jest przez nich sprawowana w sposób bezpośredni lub za pośrednictwem wybranych przedstawicieli.<br>Władza ustawodawcza, wykonawcza i sądownicza sprawowana jest zgodnie z postanowieniami niniejszej Konstytucji oraz ustaw przyjętych przez Senat San Andreas, w granicach określonych prawem.<br> Żadna z władz nie może przekroczyć kompetencji przyznanych jej przez prawo stanowe lub federalne.<br>Obywatele San Andreas mają prawo wpływać na kształt władzy poprzez:<br>udział w wyborach powszechnych,<br>udział w referendach stanowych,<br>wnoszenie petycji i inicjatyw obywatelskich.<br>Wszelka władza, która nie została wyraźnie przyznana przez Konstytucję lub ustawy, uznaje się za przysługującą Obywatelom.<br>Władza publiczna sprawowana jest w interesie dobra wspólnego, a jej nadużycie stanowi naruszenie Konstytucji i może skutkować odpowiedzialnością konstytucyjną.<br></p>
-    </section>
-    
-    <section id="section-5">
-        <h2>Art. 3. Język urzędowy</h2>
-        <p>Językiem urzędowym Stanu San Andreas jest język angielski.<br>Wszystkie akty prawne, postępowania administracyjne, rozprawy sądowe oraz oficjalna komunikacja instytucji publicznych prowadzone są w języku angielskim, chyba że przepisy szczególne stanowią inaczej.<br>Osoby nie posługujące się językiem angielskim w sposób umożliwiający im pełny udział w postępowaniu administracyjnym lub sądowym mają prawo do tłumacza przysięgłego lub osoby upoważnionej do tłumaczenia.<br>Służby porządkowe, ratunkowe i celno-graniczne mogą wykorzystywać inne języki obce pomocniczo w zakresie niezbędnym do zapewnienia bezpieczeństwa i zrozumienia sytuacji operacyjnej.<br>Instytucje publiczne, w tym Departament Imigracji, mogą prowadzić formy wsparcia i informacyjne materiały w językach innych niż angielski, o ile nie narusza to skuteczności ani ważności działań urzędowych.<br></p>
-    </section>
-    
-    <section id="section-6">
-        <h2>Art. 4. Równość wobec prawa</h2>
-        <p>Wszyscy obywatele Stanu San Andreas są równi wobec prawa i korzystają z jednakowej ochrony prawnej bez względu na płeć, rasę, kolor skóry, pochodzenie, wyznanie, orientację seksualną, tożsamość płciową, status społeczny, obywatelstwo, zawód ani przynależność polityczną.<br>Żadna instytucja publiczna ani osoba pełniąca funkcję urzędową nie może stosować prawa w sposób dyskryminujący lub uprzywilejowujący jakąkolwiek grupę.<br>W przypadku naruszenia zasady równości obywatel ma prawo do:<br>złożenia skargi konstytucyjnej do Trybunału Konstytucyjnego San Andreas,<br>domagania się odszkodowania lub zadośćuczynienia w drodze postępowania cywilnego.<br>Władze stanowe są zobowiązane do aktywnego przeciwdziałania przejawom dyskryminacji i nierównego traktowania w życiu publicznym.<br></p>
-    </section>
-    
-    <section id="section-7">
-        <h2>Art. 5. Obowiązki obywatelskie</h2>
-        <p>Każdy obywatel Stanu San Andreas zobowiązany jest do przestrzegania Konstytucji, ustaw oraz przepisów stanowionych przez uprawnione organy władzy publicznej.<br>Obywatel ma obowiązek poszanowania praw i wolności innych osób, wspierania porządku publicznego oraz działania na rzecz dobra wspólnego.<br>Do podstawowych obowiązków obywatela należą:<br>uczciwe płacenie podatków i opłat publicznych,<br>stawianie się na wezwanie organów ścigania, sądów i innych instytucji publicznych,<br>udzielanie pomocy osobom w niebezpieczeństwie życia lub zdrowia, jeżeli nie zagraża to bezpośrednio jego bezpieczeństwu,<br>ochrona mienia publicznego i współodpowiedzialność za bezpieczeństwo społeczności lokalnej.<br>Umyślne naruszenie obowiązków obywatelskich może skutkować odpowiedzialnością prawną, w tym sankcjami administracyjnymi, cywilnymi lub karnymi.<br></p>
-    </section>
-    
-    <section id="section-8">
-        <h2>Rozdział II Prawa i wolności obywateli.</h2>
-        <p></p>
-    </section>
-    
-    <section id="section-9">
-        <h2>Art. 6. Prawo do życia i wolności</h2>
-        <p>Każdy obywatel ma niezbywalne prawo do życia, wolności i bezpieczeństwa osobistego.<br>Życie ludzkie podlega ochronie prawnej od momentu urodzenia. Nikt nie może być arbitralnie pozbawiony życia.<br>Wolność osobista obejmuje swobodę poruszania się, wyboru miejsca zamieszkania, podejmowania legalnej pracy oraz wyrażania tożsamości osobistej.<br>Ograniczenie wolności może nastąpić wyłącznie na podstawie ustawy oraz orzeczenia niezależnego sądu lub decyzji organu uprawnionego na mocy prawa.<br>Zakazuje się:<br>przetrzymywania obywatela bez nakazu sądowego poza wyjątkami określonymi ustawą,<br>stosowania tortur, nieludzkiego lub poniżającego traktowania,<br>pozbawienia wolności z przyczyn politycznych, religijnych lub osobistych przekonań.<br></p>
-    </section>
-    
-    <section id="section-10">
-        <h2>Art. 7. Nietykalność osobista i wolność od bezprawnego zatrzymania</h2>
-        <p>Każdy obywatel Stanu San Andreas ma prawo do nietykalności osobistej i ochrony przed bezprawnym aresztowaniem, zatrzymaniem lub przeszukaniem.<br>Zatrzymanie obywatela może nastąpić wyłącznie na podstawie wyraźnych przepisów prawa, w szczególności w przypadku podejrzenia popełnienia przestępstwa, i musi być niezwłocznie zgłoszone właściwym organom sądowym.<br>Osoba zatrzymana ma prawo do:<br>niezwłocznego poinformowania o przyczynach zatrzymania,<br>skontaktowania się z adwokatem lub obrońcą,<br>bycia poinformowaną o prawach wynikających z tzw. klauzuli Mirandy,<br>odmowy składania wyjaśnień bez obecności obrońcy.<br>Zatrzymany musi zostać doprowadzony przed sąd w możliwie najkrótszym terminie, nieprzekraczającym 72 godzin, pod rygorem natychmiastowego zwolnienia.<br>Przeszukanie osoby, mienia lub pojazdu obywatela może odbyć się wyłącznie za jego zgodą lub na podstawie nakazu sądowego, z wyjątkiem przypadków przewidzianych ustawą w sytuacjach bezpośredniego zagrożenia bezpieczeństwa publicznego.<br></p>
-    </section>
-    
-    <section id="section-11">
-        <h2>Art. 8. Prywatność, godność i własność</h2>
-        <p>Każdy obywatel ma prawo do ochrony życia prywatnego, godności osobistej oraz nienaruszalności swojej własności.<br>Nikt nie może być poddany bezprawnej inwigilacji, podsłuchowi, obserwacji lub rejestrowaniu rozmów prywatnych bez uprzedniej zgody sądu, chyba że ustawa stanowi inaczej w przypadkach niecierpiących zwłoki.<br>Godność człowieka jest nienaruszalna i stanowi podstawę porządku prawnego Stanu San Andreas. Wszelkie formy poniżenia, zniewagi lub publicznego ośmieszania są zakazane.<br>Własność prywatna jest chroniona prawem. Nikt nie może zostać pozbawiony mienia bez ważnej podstawy prawnej, a wywłaszczenie może nastąpić jedynie za słusznym odszkodowaniem i w trybie określonym ustawą.<br>Prawo do prywatności, godności i własności może być ograniczone wyłącznie w przypadkach przewidzianych w ustawie oraz z zachowaniem zasady proporcjonalności.<br></p>
-    </section>
-    
-    <section id="section-12">
-        <h2>Art. 9. Prawo do obrony i sprawiedliwego procesu</h2>
-        <p>Każdy obywatel ma prawo do sprawiedliwego, bezstronnego i jawnego procesu sądowego, prowadzonego przez niezawisły i niezależny sąd.<br>Oskarżony ma prawo do:<br>niezwłocznego poinformowania o stawianych mu zarzutach,<br>uzyskania dostępu do materiałów dowodowych,<br>skorzystania z pomocy obrońcy z wyboru lub — w przypadku braku środków — z obrońcy z urzędu,<br>obecności na każdym etapie postępowania oraz do składania wyjaśnień lub odmowy ich składania bez ponoszenia negatywnych konsekwencji.<br>Wyrok może zostać wydany wyłącznie na podstawie dowodów zebranych zgodnie z prawem. Dowody zdobyte w sposób sprzeczny z prawem są nieważne i nie mogą stanowić podstawy orzeczenia.<br>W razie wątpliwości co do winy oskarżonego, sąd jest zobowiązany orzec na korzyść oskarżonego (zasada domniemania niewinności).<br>Każdemu skazanemu przysługuje prawo do odwołania się od wyroku do wyższej instancji, w terminie i trybie określonym ustawą.<br></p>
-    </section>
-    
-    <section id="section-13">
-        <h2>Art. 10. Wolność słowa, wyznania i zgromadzeń</h2>
-        <p>Każdy obywatel ma prawo do wolności wyrażania swoich poglądów, przekonań oraz uczestniczenia w debacie publicznej.<br>Wolność słowa obejmuje prawo do:<br>głoszenia opinii ustnie, pisemnie lub w inny sposób,<br>dostępu do informacji publicznych,<br>prowadzenia działalności dziennikarskiej i obywatelskiej,<br>ochrony źródeł informacji, jeśli zostały uzyskane w sposób legalny.<br>Każdemu przysługuje wolność sumienia i wyznania, w tym prawo do:<br>wyznawania lub nie wyznawania religii,<br>praktykowania kultu w sposób pokojowy,<br>tworzenia wspólnot religijnych i organizowania miejsc kultu w sposób nie zakłócający porządku publicznego<br>Obywatele mają prawo do organizowania pokojowych zgromadzeń i manifestacji, a także do tworzenia stowarzyszeń, fundacji oraz związków zawodowych.<br>Władze publiczne mogą ograniczyć wolność wypowiedzi, religii lub zgromadzeń wyłącznie w przypadkach określonych ustawą, jeżeli jest to niezbędne dla ochrony bezpieczeństwa publicznego, porządku, zdrowia, moralności publicznej lub praw innych osób.<br></p>
-    </section>
-    
-    <section id="section-14">
-        <h2>Rozdział III Władze Stanowe</h2>
-        <p></p>
-    </section>
-    
-    <section id="section-15">
-        <h2>Art. 11. Zasada trójpodziału władzy</h2>
-        <p>Ustrój Stanu San Andreas opiera się na zasadzie trójpodziału i równowagi władz:<br> a) ustawodawczej, sprawowanej przez Senat San Andreas,<br> b) wykonawczej, sprawowanej przez Gubernatora,<br> c) sądowniczej, sprawowanej przez niezależne sądy.<br>Każda z władz działa niezależnie, w granicach określonych Konstytucją i ustawami.<br></p>
-    </section>
-    
-    <section id="section-16">
-        <h2>Art. 12. Senat San Andreas (Władza ustawodawcza)</h2>
-        <p>Senat San Andreas stanowi władzę ustawodawczą, reprezentując obywateli w procesie stanowienia prawa.<br>Senatorowie wybierani są w wyborach powszechnych na kadencję 4 miesięcy. Zasady wyborów określa ustawa.<br>Senat uchwala ustawy, zatwierdza budżet, sprawuje nadzór nad władzą wykonawczą i ma prawo uchwałodawcze w sprawach publicznych.<br></p>
-    </section>
-    
-    <section id="section-17">
-        <h2>Art. 13.  Gubernator (Władza wykonawcza)</h2>
-        <p>Gubernator stoi na czele władzy wykonawczej, odpowiada za realizację prawa, politykę wewnętrzną i bezpieczeństwo publiczne.<br>Gubernator wybierany jest w wyborach powszechnych na kadencję 1 miesiąca, z możliwością dalszej reelekcji w przypadku braku kandydatów.<br>Gubernator ma prawo podpisywać ustawy, wnosić projekty ustaw, wydawać rozporządzenia oraz powoływać urzędników publicznych.<br></p>
-    </section>
-    
-    <section id="section-18">
-        <h2>Art. 14. Sądownictwo (Władza sądownicza)</h2>
-        <p>Władza sądownicza sprawowana jest przez niezależne i bezstronne sądy.<br>W skład sądownictwa wchodzą:<br> a) Sądy Rejonowe,<br> b) Sądy Okręgowe,<br> c) Sąd Rodzinny,<br> d) Sąd Główny.<br>Sędziowie powoływani są zgodnie z ustawą i podlegają wyłącznie Konstytucji oraz ustawom. Orzekają w imieniu Stanu San Andreas.<br></p>
-    </section>
-    
-    <section id="section-19">
-        <h2>Art. 15. Odpowiedzialność władz publicznych i kontrola konstytucyjna</h2>
-        <p>Organy władzy ustawodawczej, wykonawczej i sądowniczej działają w granicach prawa i ponoszą odpowiedzialność za naruszenia Konstytucji.<br>W przypadku przekroczenia uprawnień lub rażącego naruszenia prawa, wobec członków tych organów może zostać wszczęte postępowanie przed Sądem Głównym lub Trybunałem Konstytucyjnym.<br>Wszelkie spory kompetencyjne pomiędzy władzami rozstrzyga Trybunał Konstytucyjny Stanu San Andreas.<br>Każdy obywatel ma prawo do złożenia skargi konstytucyjnej, jeśli jego wolności lub prawa zostały naruszone aktem organu władzy publicznej.<br></p>
-    </section>
-    
-    <section id="section-20">
-        <h2>Rozdział IV Immunitety i ochrona urzędników publicznych</h2>
-        <p></p>
-    </section>
-    
-    <section id="section-21">
-        <h2>Art. 16. Immunitet członków DOJ</h2>
-        <p>Członkowie zarządu Department of Justice (DOJ) korzystają z immunitetu urzędniczego w zakresie działań podejmowanych w ramach pełnienia swoich obowiązków służbowych.<br>Immunitet obejmuje ochronę przed:<br>zatrzymaniem i przeszukaniem,<br>postępowaniem karnym, administracyjnym oraz dyscyplinarnym,<br>nakładaniem mandatów i grzywien przez inne organy państwowe,<br>w przypadku, gdy członek zarządu DOJ otrzyma mandat lub grzywnę z wpisaniem do akt/ bez wpisania do akt, ma on prawo wystawić grzywnę administracyjną z tytułu nieznajomości konstytucji dla osoby, która daną grzywnę/mandat wystawiła<br>interwencją organów porządkowych, bez uprzedniej autoryzacji DOJ lub sądu.<br>Immunitet nie ma zastosowania w przypadku udowodnionego przekroczenia uprawnień, działania ze szkodą dla państwa lub społeczeństwa, albo przy działaniu prywatnym, niezwiązanym z funkcją.<br>Decyzję o uchyleniu immunitetu podejmuje wyłącznie:<br>Dyrektor DOJ,<br>lub jednogłośnie Sąd Główny Stanu San Andreas w specjalnym trybie konstytucyjnym.<br>Immunitet nie stanowi przeszkody dla prowadzenia czynności wyjaśniających, jednak wszelkie działania muszą być wcześniej zatwierdzone zgodnie z procedurą.<br>Osoby, które wliczają się w skład zarządu DOJ:<br>Ivan Wilson SSN<br>Lilith Valieri SSN<br></p>
-    </section>
-    
-    <section id="section-22">
-        <h2>Art. 17. Tryb uchylenia immunitetu</h2>
-        <p>Uchylenie immunitetu członka zarządu Department of Justice lub innego urzędnika objętego konstytucyjną ochroną może nastąpić wyłącznie w specjalnym trybie konstytucyjnym.<br>Wniosek o uchylenie immunitetu może złożyć:<br> a) Prokurator Okręgowy lub Generalny,<br> b) Dyrektor DOJ,<br> c) Sąd niższej instancji z uzasadnionym orzeczeniem,<br> d) Senator w imieniu Senatu – większością 2/3 głosów.<br>Wniosek musi zawierać:<br>imię i nazwisko urzędnika,<br>opis zarzucanego naruszenia,<br>dowody na przekroczenie uprawnień lub działania wykraczające poza zakres funkcji,<br>uzasadnienie konieczności uchylenia immunitetu.<br>Wniosek rozpatruje Sąd Główny w pełnym składzie, w terminie nie dłuższym niż 7 dni od jego wpłynięcia.<br>Uchylenie immunitetu wymaga:<br>jednogłośnego orzeczenia sędziów Sądu Głównego,<br>lub bezpośredniej decyzji Dyrektora DOJ – jeśli dotyczy osoby bez funkcji sędziowskiej lub dyrektorskiej.<br>Do czasu rozpatrzenia wniosku urzędnik korzysta z pełnej ochrony immunitetowej, chyba że Dyrektor DOJ zawiesi go w obowiązkach służbowych.<br>Po uchyleniu immunitetu możliwe jest prowadzenie czynności karnych, administracyjnych lub dyscyplinarnych wobec urzędnika na zasadach ogólnych.<br></p>
-    </section>
-    
-    <section id="section-23">
-        <h2>Art. 18. Zakaz interwencji wobec członka zarządu DOJ bez zgody</h2>
-        <p>Żaden funkcjonariusz publiczny, w tym członek LSPD, SD, FIB lub innej jednostki egzekucyjnej, nie ma prawa do:<br>zatrzymania,<br>przeszukania,<br>wylegitymowania,<br>nałożenia mandatu lub grzywny,<br>podjęcia czynności operacyjnych lub obserwacyjnych<br>– wobec członka zarządu Department of Justice w związku z jego funkcją, bez uprzedniego uzyskania zgody odpowiedniego organu.<br>Zgoda na interwencję może zostać wydana wyłącznie przez:<br> a) Dyrektora DOJ,<br> b) lub Sąd Główny w trybie konstytucyjnym, w przypadku gdy Dyrektor DOJ jest stroną sprawy.<br>Działania podjęte z naruszeniem tego przepisu są z mocy prawa nieważne, a osoby za nie odpowiedzialne mogą zostać pociągnięte do odpowiedzialności karnej, dyscyplinarnej lub cywilnej.<br>Obowiązek weryfikacji statusu urzędnika DOJ spoczywa na funkcjonariuszu podejmującym czynności. W przypadku wątpliwości, funkcjonariusz zobowiązany jest natychmiast skontaktować się z przedstawicielem DOJ.<br></p>
-    </section>
-    
-    <section id="section-24">
-        <h2>Rozdział V Administracja publiczna</h2>
-        <p></p>
-    </section>
-    
-    <section id="section-25">
-        <h2>Art. 19. Departamenty stanowe: LSPD, EMS, IRS, USC itd.</h2>
-        <p>Na terenie Stanu San Andreas funkcjonują powołane przez władzę wykonawczą departamenty stanowe, odpowiedzialne za realizację zadań publicznych w określonych obszarach administracji, bezpieczeństwa i usług publicznych.<br>Do podstawowych departamentów stanowych należą w szczególności:<br>LSPD (Los Santos Police Department) – odpowiedzialny za bezpieczeństwo i porządek publiczny,<br>SD (Sheriff’s Department) – odpowiedzialny za ochronę porządku na terenach pozamiejskich i we współpracy z lokalnymi jednostkami,<br>EMS (Emergency Medical Services) – odpowiedzialny za ratownictwo medyczne i ochronę zdrowia obywateli,<br>FIB (Federal Investigation Bureau) – uprawniony do prowadzenia śledztw o charakterze federalnym,<br>IRS (Internal Revenue Service) – odpowiedzialny za kontrolę finansową i egzekwowanie przepisów podatkowych,<br>Każdy departament działa w granicach prawa, zgodnie z przepisami Konstytucji, ustaw oraz wewnętrznych regulaminów zatwierdzonych przez Departament Sprawiedliwości.<br>Działalność departamentów podlega nadzorowi Gubernatora, a w zakresie zgodności z Konstytucją – kontroli sądowej oraz Trybunału Konstytucyjnego.<br>Tworzenie, likwidacja i reorganizacja departamentów odbywa się na mocy rozporządzenia Gubernatora, za uprzednią zgodą Senatu San Andreas.<br></p>
-    </section>
-    
-    <section id="section-26">
-        <h2>Art. 20. Nadawanie uprawnień, zwierzchnictwo i obowiązki</h2>
-        <p>Nadawanie uprawnień funkcjonariuszom publicznym, urzędnikom stanowym oraz członkom departamentów odbywa się na mocy aktu mianowania wydawanego przez właściwy organ zwierzchni, zgodnie z przepisami ustawowymi i wewnętrznymi regulaminami.<br>Zwierzchnictwo nad służbami i instytucjami publicznymi sprawują:<br>Gubernator – jako najwyższy organ władzy wykonawczej,<br>Dyrektorzy departamentów – w zakresie struktur im podległych,<br>Senat San Andreas – w zakresie kontroli nad zgodnością działań instytucji z interesem publicznym.<br>Każda osoba pełniąca funkcję publiczną w imieniu Stanu San Andreas zobowiązana jest do:<br>przestrzegania Konstytucji i przepisów prawa,<br>działania w interesie społecznym, z poszanowaniem praw obywateli,<br>zachowania neutralności politycznej w czasie wykonywania obowiązków służbowych,<br>składania raportów i wyjaśnień przed przełożonymi lub sądem – na żądanie.<br>Nadużycie nadanych uprawnień, przekroczenie kompetencji lub działanie na szkodę obywatela może skutkować:<br>wszczęciem postępowania dyscyplinarnego,<br>pociągnięciem do odpowiedzialności karnej lub cywilnej,<br>cofnięciem uprawnień przez organ nadzorczy lub Sąd Główny.<br></p>
-    </section>
-    
-    <section id="section-27">
-        <h2>Art. 21. Zasady działania instytucji wykonawczych</h2>
-        <p>Instytucje wykonawcze Stanu San Andreas działają na podstawie Konstytucji, ustaw stanowych oraz rozporządzeń wydawanych przez Gubernatora i właściwe organy nadzoru.<br>Działania instytucji wykonawczych muszą być:<br>legalne – zgodne z obowiązującym prawem,<br>celowe – podejmowane w interesie społecznym i dla dobra wspólnego,<br>proporcjonalne – nienaruszające praw obywateli ponad miarę,<br>transparentne – możliwe do kontroli przez Senat, DOJ i Trybunał Konstytucyjny.<br>Każda instytucja wykonawcza zobowiązana jest do:<br>przedstawiania okresowych sprawozdań ze swojej działalności,<br>współpracy z Departamentem Sprawiedliwości w zakresie przestrzegania prawa,<br>udostępniania dokumentacji na żądanie sądu lub organu kontrolnego,<br>ochrony interesu publicznego, mienia państwowego i bezpieczeństwa obywateli.<br>Przekroczenie kompetencji lub rażące zaniedbanie obowiązków przez instytucję wykonawczą może skutkować:<br>interwencją Gubernatora,<br>postępowaniem sądowym,<br>zawieszeniem działalności decyzją Senatu,<br>likwidacją instytucji – na mocy aktu ustawowego.<br></p>
-    </section>
-    
-    <section id="section-28">
-        <h2>Rozdział VI Trybunał konstytucyjny</h2>
-        <p></p>
-    </section>
-    
-    <section id="section-29">
-        <h2>Art. 22. Skład i powoływanie</h2>
-        <p>Władzę sądowniczą w stanie San Andreas sprawują niezależne sądy, w skład których wchodzą:<br>Sąd Rejonowy,<br>Sąd Okręgowy,<br>Sąd Rodzinny,<br>Sąd Główny,<br>Trybunał Konstytucyjny.<br>Sędziowie powoływani są na czas nieokreślony przez Radę Sądowniczą, powołaną przez Senat San Andreas, na wniosek Dyrektora DOJ lub Gubernatora.<br>Kandydat na sędziego musi:<br>posiadać wykształcenie prawnicze,<br>posiadać nieposzlakowaną opinię,<br>odbyć aplikację sędziowską lub wykazać się doświadczeniem w praktyce prawnej.<br>Trybunał Konstytucyjny składa się z 3 sędziów mianowanych przez Senat, spośród kandydatów zaproponowanych przez Gubernatora i zatwierdzonych przez DOJ. Ich kadencja trwa 5 lat, z możliwością jednej reelekcji.<br>Sędziowie są niezawiśli i podlegają wyłącznie Konstytucji oraz ustawom. W czasie sprawowania urzędu nie mogą być członkami żadnych partii ani organizacji o charakterze politycznym.<br></p>
-    </section>
-    
-    <section id="section-30">
-        <h2>Art. 23. Kompetencje i tryb orzekania</h2>
-        <p>Sądy Stanu San Andreas rozpatrują sprawy w zakresie:<br>prawa karnego,<br>prawa cywilnego,<br>prawa administracyjnego,<br>prawa rodzinnego,<br>prawa konstytucyjnego (wyłącznie Trybunał Konstytucyjny).<br>Sąd Rejonowy rozpatruje sprawy drobne, spory cywilne do określonej wartości, wykroczenia oraz sprawy pierwszej instancji w postępowaniu uproszczonym.<br>Sąd Okręgowy rozpatruje sprawy poważniejsze w pierwszej instancji oraz pełni funkcję instancji odwoławczej od wyroków sądów rejonowych.<br>Sąd Rodzinny zajmuje się sprawami małżeńskimi, opieką nad dziećmi, dziedziczeniem, testamentami oraz innymi sprawami z zakresu prawa rodzinnego.<br>Sąd Główny pełni funkcję najwyższej instancji sądowej w systemie sądów powszechnych oraz rozpoznaje skargi kasacyjne, rewizje i sprawy dyscyplinarne sędziów.<br>Trybunał Konstytucyjny bada zgodność ustaw, rozporządzeń i aktów prawnych z Konstytucją Stanu San Andreas oraz rozstrzyga spory kompetencyjne pomiędzy organami władzy.<br>Orzeczenia sądowe zapadają po rozpoznaniu sprawy na jawnej rozprawie, w składzie jednoosobowym lub wieloosobowym – zgodnie z właściwością sądu.<br>Każdy wyrok powinien być należycie uzasadniony i ogłoszony publicznie, chyba że jawność została wyłączona z przyczyn przewidzianych prawem.<br>Stronom przysługuje prawo do wniesienia odwołania lub skargi – zgodnie z trybem przewidzianym w przepisach proceduralnych.<br></p>
-    </section>
-    
-    <section id="section-31">
-        <h2>Art. 24. Zaskarżanie aktów niezgodnych z Konstytucją</h2>
-        <p>Każdy obywatel Stanu San Andreas ma prawo złożyć skargę konstytucyjną do Trybunału Konstytucyjnego, jeżeli uważa, że jego prawa lub wolności zostały naruszone przez akt prawny niezgodny z Konstytucją.<br>Prawo do zaskarżenia przysługuje również:<br>członkom Senatu San Andreas,<br>Gubernatorowi,<br>Dyrektorowi Departamentu Sprawiedliwości,<br>Trybunałowi Głównemu lub sądowi, jeśli akt budzi wątpliwości co do zgodności z Konstytucją.<br>Trybunał Konstytucyjny po rozpoznaniu sprawy może:<br>uznać akt za niezgodny z Konstytucją – co skutkuje jego unieważnieniem w całości lub części,<br>oddalić skargę, jeżeli nie stwierdzi niezgodności.<br>Orzeczenie Trybunału Konstytucyjnego ma moc powszechnie obowiązującą i jest ostateczne. Akt uznany za niezgodny traci moc z dniem ogłoszenia orzeczenia.<br>Skarga konstytucyjna powinna być rozpatrzona nie później niż w terminie 30 dni od jej złożenia, chyba że szczególne okoliczności wymagają przedłużenia postępowania.<br></p>
-    </section>
-    
-    <section id="section-32">
-        <h2>Art. 25. Zaskarżanie aktów niezgodnych z Konstytucją</h2>
-        <p>Nadzór nad zgodnością wszelkich aktów prawnych obowiązujących w stanie San Andreas z Konstytucją sprawuje Trybunał Konstytucyjny.<br>Trybunał działa niezależnie od władzy ustawodawczej, wykonawczej i sądowniczej i podlega wyłącznie Konstytucji.<br>Do kompetencji Trybunału należy w szczególności:<br>kontrola konstytucyjności ustaw, rozporządzeń, aktów wykonawczych i uchwał,<br>rozstrzyganie sporów kompetencyjnych między organami władzy publicznej,<br>badanie zgodności działań organów państwowych z prawami i wolnościami obywatelskimi,<br>kontrola skarg konstytucyjnych obywateli oraz wniosków instytucjonalnych.<br>Postępowania przed Trybunałem mają charakter publiczny i odbywają się na podstawie zasad kontradyktoryjności, bezstronności oraz jawności, z wyjątkiem przypadków określonych w ustawie.<br>Orzeczenia Trybunału są ostateczne, wiążące wszystkie organy państwowe i nie podlegają zaskarżeniu.<br></p>
-    </section>
-    
-    <section id="section-33">
-        <h2>Rozdział VII Stan wyjątkowy i nadzwyczajne procedury</h2>
-        <p></p>
-    </section>
-    
-    <section id="section-34">
-        <h2>Art. 26. Ogłoszenie stanu wyjątkowego</h2>
-        <p>Stan wyjątkowy może zostać ogłoszony na terenie całego Stanu San Andreas lub jego części wyłącznie w przypadku:<br>zagrożenia suwerenności lub bezpieczeństwa publicznego,<br>poważnych zamieszek wewnętrznych,<br>klęski żywiołowej, katastrofy lub aktu terrorystycznego,<br>sytuacji, która uniemożliwia prawidłowe funkcjonowanie organów władzy publicznej.<br>Stan wyjątkowy ogłasza Gubernator Stanu San Andreas na wniosek:<br>Senatu,<br>Departamentu Sprawiedliwości,<br>Dyrektora Generalnego Sił Porządkowych (LSPD, SD).<br>Decyzja o wprowadzeniu stanu wyjątkowego musi być:<br>zatwierdzona przez Senat w ciągu 48 godzin,<br>ogłoszona publicznie z podaniem zakresu ograniczeń, czasu trwania i uzasadnienia.<br>W czasie obowiązywania stanu wyjątkowego mogą zostać tymczasowo ograniczone następujące prawa:<br>wolność zgromadzeń i przemieszczania się,<br>prawo do strajku,<br>dostęp do informacji publicznej,<br>inne prawa – jedynie w zakresie niezbędnym do przywrócenia porządku.<br>Członkowie zarządu DOJ oraz sędziowie zachowują immunitet i pełnię funkcji, chyba że Senat w trybie nadzwyczajnym postanowi inaczej zgodnie z Konstytucją.<br>Stan wyjątkowy nie może trwać dłużej niż 14 dni, chyba że jego przedłużenie zostanie przegłosowane większością kwalifikowaną w Senacie.<br></p>
-    </section>
-    
-    <section id="section-35">
-        <h2>Art. 27. Zakres uprawnień Gubernatora</h2>
-        <p>W czasie obowiązywania stanu wyjątkowego Gubernator Stanu San Andreas posiada rozszerzone uprawnienia, wyłącznie w granicach określonych w Konstytucji i ustawach nadzwyczajnych.<br>Do uprawnień Gubernatora w tym okresie należą:<br>wydawanie dekretów z mocą ustawy w sprawach niecierpiących zwłoki,<br>zarządzanie działaniami służb porządkowych i ratunkowych (LSPD, SD, EMS, NG),<br>ograniczanie działalności gospodarczej, komunikacyjnej i zgromadzeń publicznych,<br>zarządzanie ewakuacją, wprowadzeniem godziny policyjnej oraz kontrolą przemieszczania się,<br>przejmowanie czasowego nadzoru nad instytucjami stanowymi w zakresie niezbędnym do przywrócenia porządku publicznego.<br>Gubernator nie może zawiesić działania Konstytucji ani praw podstawowych, z wyjątkiem sytuacji określonych w Art. 26 ust. 4.<br>Wszystkie działania Gubernatora podjęte w czasie stanu wyjątkowego:<br>podlegają kontroli Sądu Głównego i Trybunału Konstytucyjnego,<br>muszą być udokumentowane i ogłoszone publicznie,<br>mogą zostać unieważnione przez Senat w drodze uchwały większości 2/3 głosów.<br>Po zakończeniu stanu wyjątkowego, wszelkie dekrety Gubernatora tracą moc obowiązującą, o ile nie zostaną przekształcone w akty ustawowe przez Senat.<br></p>
-    </section>
-    
-    <section id="section-36">
-        <h2>Art. 28. Kontrola i odwołanie stanu wyjątkowego</h2>
-        <p>Stan wyjątkowy podlega stałej kontroli ze strony Senatu San Andreas, Sądu Głównego oraz Trybunału Konstytucyjnego.<br>Każda decyzja Gubernatora podjęta w czasie stanu wyjątkowego może zostać:<br>zakwestionowana przez Senat w trybie uchwały,<br>zaskarżona do Trybunału Konstytucyjnego w trybie przyspieszonym,<br>zawieszona lub unieważniona przez Sąd Główny, jeśli przekracza kompetencje ustawowe.<br>Odwołanie stanu wyjątkowego może nastąpić:<br>z inicjatywy Gubernatora,<br>na wniosek Senatu uchwałą zwykłą większością głosów,<br>automatycznie po upływie maksymalnego okresu jego obowiązywania, jeżeli nie zostanie przedłużony zgodnie z Konstytucją.<br>Po odwołaniu stanu wyjątkowego:<br>wszelkie ograniczenia praw i wolności obywatelskich przestają obowiązywać,<br>instytucje państwowe powracają do trybu działania określonego przez prawo zwyczajne,<br>Gubernator składa publiczne sprawozdanie przed Senatem z podjętych działań i ich skutków w terminie 7 dni.<br>Osoby, których prawa zostały naruszone w czasie stanu wyjątkowego bez należytego uzasadnienia lub z przekroczeniem uprawnień, mogą wystąpić na drogę sądową przeciwko Skarbowi Stanu lub osobom odpowiedzialnym.<br></p>
-    </section>
-    
-    <section id="section-37">
-        <h2>Rozdział VIII Przysięgi urzędnicze i odpowiedzialność</h2>
-        <p></p>
-    </section>
-    
-    <section id="section-38">
-        <h2>Art. 29. Treść przysięgi</h2>
-        <p>Każda osoba obejmująca urząd publiczny w stanie San Andreas, w tym członkowie Senatu, Gubernator, sędziowie, prokuratorzy, adwokaci, funkcjonariusze służb porządkowych oraz członkowie zarządu Departamentu Sprawiedliwości, składa przysięgę o następującej treści:<br>BCSO:<br>„Ja, [imię i nazwisko], uroczyście przysięgam, że będę wiernie służyć Stanowi San Andreas, przestrzegać Konstytucji i praw tego Stanu, strzec wolności i sprawiedliwości jego obywateli, wykonywać swoje obowiązki uczciwie, bezstronnie i z poszanowaniem godności urzędu, który obejmuję. Tak mi dopomóż Bóg.”<br>LSPD:<br>“Ja obywatel/ka Stanów Zjednoczonych, jestem świadom/a podejmowanych przeze mnie decyzji, oraz wykonywania wszelkich obowiązków funkcjonariusza Police Department. Ślubuję służyć wiernie narodowi, chronić obywateli oraz przestrzegać prawa zawartego w konstytucji, chociażbym miał/a poświęcić przez to własne życie. Będę wykonywał/a powierzone mi zadania z wielką dokładnością, tak aby nikt nie mógł powiedzieć o mnie złego słowa, a jeżeli takie się znajdą, będę starał/a się zapobiegać pogłębianiu moich wad. Ślubuję dotrzymać tajemnicy służbowej, chociażby mnie torturowali nie wyjawię najskrytszych sekretów dotyczących jednostki. Będę wierny/a oraz oddany/a jednostce i nigdy nie podważę zdania wyższej rangi, nawet jeżeli będzie ona złą decyzją. Kiedy jednak będę czuł/a się poszkodowany/a przez owe decyzje, odniosę się w raporcie do Dyrekcji jednostki wewnętrznej”<br>W przypadku osób niewierzących lub wyznających inne przekonania, dopuszcza się złożenie przysięgi bez słów „Tak mi dopomóż Bóg”, bez wpływu na jej ważność.<br>Złożenie przysięgi jest warunkiem objęcia urzędu i uzyskania uprawnień wynikających z pełnienia funkcji publicznej.<br>Treść przysięgi może być uzupełniana o klauzule szczegółowe w zależności od charakteru pełnionej funkcji, pod warunkiem zgodności z niniejszym artykułem i Konstytucją.<br></p>
-    </section>
-    
-    <section id="section-39">
-        <h2>Art. 30. Odpowiedzialność za złamanie przysięgi</h2>
-        <p>Każda osoba, która złożyła przysięgę urzędniczą zgodnie z Art. 29 i dopuściła się jej świadomego złamania, ponosi odpowiedzialność konstytucyjną, dyscyplinarną lub karną, w zależności od charakteru naruszenia.<br>Za złamanie przysięgi uznaje się w szczególności:<br>działanie na szkodę Stanu San Andreas lub jego obywateli,<br>rażące naruszenie Konstytucji lub obowiązującego prawa,<br>nadużycie władzy lub przekroczenie uprawnień,<br>działanie z pobudek osobistych lub korupcyjnych,<br>zaniechanie obowiązków wynikających z pełnionej funkcji.<br>Postępowanie w sprawie złamania przysięgi:<br>w przypadku sędziów, członków zarządu DOJ i Gubernatora – prowadzi Sąd Główny lub Trybunał Konstytucyjny,<br>w przypadku funkcjonariuszy służb – prowadzi sąd dyscyplinarny właściwy dla danej formacji,<br>w przypadku senatorów – decyzję podejmuje Senat w drodze uchwały po przeprowadzeniu postępowania wyjaśniającego.<br>Sankcje mogą obejmować:<br>upomnienie lub naganę,<br>zawieszenie w obowiązkach,<br>pozbawienie funkcji publicznej i immunitetu,<br>skierowanie sprawy do prokuratury stanowej w celu wszczęcia postępowania karnego.<br>Złamanie przysięgi jest okolicznością obciążającą przy orzekaniu w sprawach karnych i dyscyplinarnych.<br></p>
-    </section>
-    
-    <section id="section-40">
-        <h2>Art. 31. Procedura dyscyplinarna</h2>
-        <p>Procedura dyscyplinarna wobec osoby pełniącej funkcję publiczną w stanie San Andreas jest wszczynana w przypadku podejrzenia naruszenia obowiązków służbowych, złamania przysięgi lub działania na szkodę interesu publicznego.<br>Postępowanie dyscyplinarne prowadzi:<br>Komisja Dyscyplinarna powołana przez Departament Sprawiedliwości – w przypadku członków DOJ oraz funkcjonariuszy organów porządkowych,<br>Senat San Andreas – wobec senatorów,<br>Sąd Główny – wobec sędziów i Gubernatora,<br>Wewnętrzne komisje odpowiedzialności zawodowej – w przypadku funkcjonariuszy LSPD, EMS, IRS i USC.<br>Postępowanie dyscyplinarne musi zapewniać:<br>prawo do obrony,<br>jawność postępowania (chyba że przemawia za tym interes bezpieczeństwa państwowego),<br>niezależność organu orzekającego,<br>dostęp do materiału dowodowego.<br>W toku postępowania mogą zostać zastosowane środki tymczasowe, w tym:<br>zawieszenie w czynnościach służbowych,<br>ograniczenie dostępu do informacji niejawnych,<br>cofnięcie decyzji administracyjnych wydanych przez osobę objętą postępowaniem.<br>Decyzje dyscyplinarne mogą skutkować:<br>uniewinnieniem,<br>upomnieniem lub naganą,<br>czasowym zawieszeniem w obowiązkach,<br>usunięciem z urzędu lub służby,<br>skierowaniem sprawy do prokuratury.<br>Od orzeczenia dyscyplinarnego przysługuje odwołanie do Trybunału Konstytucyjnego, który rozpatruje sprawę w terminie 14 dni.<br></p>
-    </section>
-    
-    <section id="section-41">
-        <h2>Rozdział IX Finanse publiczne i gospodarka</h2>
-        <p></p>
-    </section>
-    
-    <section id="section-42">
-        <h2>Art. 32. Budżet stanu</h2>
-        <p>Budżet Stanu San Andreas stanowi podstawowy plan finansowy, określający dochody i wydatki stanu na dany rok fiskalny.<br>Projekt budżetu przygotowuje Departament Finansów w porozumieniu z Gubernatorem oraz Departamentem Gospodarki, a następnie przedstawia go Senatowi San Andreas do zatwierdzenia.<br>Budżet obejmuje w szczególności:<br>dochody z tytułu podatków, opłat i ceł,<br>wpływy z majątku stanowego oraz działalności instytucji publicznych,<br>wydatki na administrację, bezpieczeństwo, sądownictwo, służbę zdrowia, edukację oraz inwestycje infrastrukturalne.<br>Zatwierdzenie budżetu następuje w drodze uchwały Senatu większością zwykłą głosów, nie później niż do końca pierwszego miesiąca roku fiskalnego.<br>W przypadku nieuchwalenia budżetu w terminie, obowiązuje tymczasowo projekt budżetu przedstawiony przez Gubernatora przez okres nie dłuższy niż 30 dni.<br>Każda zmiana w uchwalonym budżecie wymaga przeprowadzenia procedury analogicznej do jego uchwalenia.<br>Kontrolę nad wykonaniem budżetu sprawuje:<br>IRS<br>Senacka Komisja Finansów,<br>Trybunał Konstytucyjny – w zakresie zgodności decyzji budżetowych z Konstytucją,<br>w tej kolejności.<br>Obywatele mają prawo do publicznego wglądu w budżet oraz jego wykonanie, z wyjątkiem informacji objętych klauzulą tajności.<br></p>
-    </section>
-    
-    <section id="section-43">
-        <h2>Art. 33. Ustawa podatkowa (odniesienie)</h2>
-        <p>Szczegółowe zasady dotyczące obowiązków podatkowych obywateli oraz podmiotów gospodarczych w stanie San Andreas reguluje Ustawa Podatkowa, stanowiąca akt wykonawczy do niniejszej Konstytucji.<br>Ustawa Podatkowa określa w szczególności:<br>rodzaje podatków stanowych,<br>stawki i zasady naliczania podatków,<br>podmioty objęte obowiązkiem podatkowym,<br>tryb płatności oraz egzekucji zobowiązań podatkowych,<br>ulgi, zwolnienia i inne formy preferencyjnego opodatkowania,<br>sankcje za uchylanie się od obowiązków podatkowych.<br>Każda zmiana w Ustawie Podatkowej wymaga zatwierdzenia przez Senat San Andreas i zgodności z Konstytucją.<br>Interpretacja przepisów podatkowych należy do właściwych organów skarbowych stanu San Andreas, z zastrzeżeniem kontroli sądowej i konstytucyjnej.<br>Obywatele i przedsiębiorstwa mają obowiązek znajomości i przestrzegania przepisów Ustawy Podatkowej, a także dokumentowania i potwierdzania dokonywanych rozliczeń.<br></p>
-    </section>
-    
-    <section id="section-44">
-        <h2>Art. 34. Organy nadzoru finansowego</h2>
-        <p>Nadzór nad finansami publicznymi stanu San Andreas sprawują niezależne i wyspecjalizowane organy, powołane w celu zapewnienia przejrzystości, legalności i celowości gospodarowania środkami publicznymi.<br>Do podstawowych organów nadzoru finansowego należą:<br>Departament Kontroli Finansowej (DKF) – odpowiedzialny za bieżącą kontrolę wydatków instytucji publicznych,<br>Komisja Audytu Budżetowego Senatu (KABS) – prowadzi okresowe audyty budżetu i analizuje zgodność wydatków z uchwałami budżetowymi,<br>Sąd Główny – sprawuje nadzór sądowy nad legalnością decyzji finansowych organów publicznych,<br>Trybunał Konstytucyjny – rozpatruje skargi obywateli i instytucji na niezgodność działań finansowych z Konstytucją.<br>Organy te mają prawo do:<br>żądania dokumentów i informacji finansowych od wszystkich instytucji stanowych,<br>wstrzymania wykonania decyzji budżetowych w razie podejrzenia naruszenia prawa,<br>składania raportów i zaleceń do Gubernatora i Senatu.<br>Nikt nie może utrudniać pracy organów nadzoru finansowego ani uchylać się od współpracy pod groźbą odpowiedzialności dyscyplinarnej i karnej.<br>Wyniki kontroli i audytów finansowych są jawne i publikowane publicznie, z wyjątkiem informacji objętych ochroną ze względu na bezpieczeństwo stanu.<br></p>
-    </section>
-    
-    <section id="section-45">
-        <h2>Rozdział X Postanowienia końcowe</h2>
-        <p></p>
-    </section>
-    
-    <section id="section-46">
-        <h2>Art. 35. Wejście w życie Konstytucji</h2>
-        <p>Niniejsza Konstytucja Stanu San Andreas wchodzi w życie z dniem jej ogłoszenia przez Gubernatora i opublikowania w Dzienniku Ustaw Stanowych.<br>Z chwilą wejścia w życie Konstytucji, wszystkie wcześniejsze akty o randze konstytucyjnej lub sprzeczne z jej treścią tracą moc obowiązującą.<br>Instytucje państwowe mają obowiązek dostosowania swoich regulaminów wewnętrznych, statutów oraz procedur do postanowień niniejszej Konstytucji w terminie 30 dni od daty jej wejścia w życie.<br>Nadzór nad wdrożeniem Konstytucji oraz spójnością obowiązujących aktów prawnych sprawuje Trybunał Konstytucyjny San Andreas.<br>Konstytucja może być zmieniona wyłącznie w trybie przewidzianym w jej przepisach i nie może być zawieszona, z wyjątkiem sytuacji ogłoszenia stanu wojennego lub wyjątkowego, na warunkach określonych w niniejszym dokumencie.<br></p>
-    </section>
-    
-    <section id="section-47">
-        <h2>Art. 36. Zmiany Konstytucji  procedura</h2>
-        <p>Zmiany niniejszej Konstytucji mogą być dokonywane wyłącznie w drodze ustawy konstytucyjnej, uchwalonej przez Senat San Andreas większością kwalifikowaną co najmniej 2/3 głosów ustawowej liczby senatorów.<br>Projekt zmiany Konstytucji może zgłosić:<br>Gubernator,<br>co najmniej 1/3 składu Senatu,<br>Departament Sprawiedliwości,<br>Grupa obywateli w liczbie co najmniej 500 podpisów, złożonych wraz z projektem do Senatu.<br>Przed uchwaleniem zmiany Konstytucji, projekt musi zostać:<br>skierowany do publicznych konsultacji na okres co najmniej 7 dni,<br>zaopiniowany przez Trybunał Konstytucyjny pod kątem zgodności formalnej i systemowej.<br>W przypadku zmiany dotyczącej:<br>praw obywatelskich,<br>ustroju sądownictwa,<br>immunitetów organów państwowych,<br> – wymagana jest także akceptacja Gubernatora oraz Rady Departamentu Sprawiedliwości.<br>Zmiana Konstytucji wchodzi w życie w terminie wskazanym w ustawie konstytucyjnej, nie wcześniej niż 3 dni od jej ogłoszenia.<br></p>
-    </section>
-    
-    <section id="section-48">
-        <h2>Art. 37. Hierarchia aktów prawnych</h2>
-        <p>Konstytucja Stanu San Andreas jest najwyższym aktem prawnym obowiązującym na terenie stanu i ma pierwszeństwo przed wszystkimi innymi źródłami prawa.<br>W przypadku sprzeczności przepisów, stosuje się następującą hierarchię norm prawnych:<br>Konstytucja Stanu San Andreas,<br>Ustawy uchwalone przez Sędziego Najwyższego,<br>Rozporządzenia Gubernatora oraz aktów wykonawczych,<br>Regulaminy organów i instytucji stanowych,<br>Uchwały lokalne i akty administracyjne,<br>Umowy cywilnoprawne oraz wewnętrzne regulaminy podmiotów prywatnych.<br>Akty prawne niższego rzędu muszą pozostawać w zgodzie z Konstytucją i ustawami stanowymi. W przypadku niezgodności, uznaje się je za nieważne w zakresie tej niezgodności.<br>Trybunał Konstytucyjny jest właściwy do oceny zgodności aktów prawnych z Konstytucją oraz do ich uchylania w przypadku stwierdzenia niezgodności.<br>© Copyright<br>Zgodnie z art. 115 ustawy z dnia 4 lutego 1994. o prawie autorskim i prawach pokrewnych, niniejszy dokument jest własnością jego autorów i jest chroniony prawem autorskim. Jakiekolwiek kopiowanie, rozpowszechnianie, modyfikowanie lub wykorzystywanie jego treści w całości lub w części bez uprzedniej pisemnej zgody autorów jest zabronione. Wszelkie prawa zastrzeżone.<br>fs93Kri<br></p>
-    </section>
-    
+        <ul>
+            <li>Rozdział I Podstawowe zasady ustrojowe</li>
+            <li>Rozdział II Prawa i wolności obywateli</li>
+            <li>Rozdział III Władza ustawodawcza</li>
+            <li>Rozdział IV Władza wykonawcza</li>
+            <li>Rozdział V Władza sądownicza</li>
+        </ul>
+
+        <div class="chapter" id="rozdzial1">
+            <h2>Rozdział I Podstawowe zasady ustrojowe</h2>
+
+            <h3 id="art1">Art. 1. Suwerenność i ustrój</h3>
+            <p>Stan San Andreas jest demokratycznym, republikańskim i samorządnym bytem publicznoprawnym...</p>
+
+            <h3 id="art2">Art. 2. Źródła władzy</h3>
+            <p>Władza publiczna w San Andreas pochodzi od Obywateli...</p>
+
+            <h3 id="art3">Art. 3. Język urzędowy</h3>
+            <p>Językiem urzędowym w San Andreas jest język angielski...</p>
+
+            <h3 id="art4">Art. 4. Władza ustawodawcza</h3>
+            <p>Władzę ustawodawczą sprawuje Zgromadzenie Stanowe...</p>
+
+            <h3 id="art5">Art. 5. Władza wykonawcza</h3>
+            <p>Władzę wykonawczą sprawuje Gubernator Stanu...</p>
+
+            <h3 id="art6">Art. 6. Władza sądownicza</h3>
+            <p>Władzę sądowniczą sprawują niezawisłe sądy...</p>
+        </div>
     </main>
 </body>
 </html>
