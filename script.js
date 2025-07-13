@@ -1,1 +1,0 @@
-console.log('Strona DOJ działa poprawnie.');
