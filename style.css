@@ -1,64 +1,49 @@
-
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: #f1f4f9;
-    color: #222;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6fb;
+    color: #1e1e1e;
 }
-header {
-    background-color: #09336f;
-    color: white;
-    padding: 1rem;
-}
-.main-nav ul {
-    list-style: none;
+nav {
+    background-color: #14213d;
+    padding: 15px 25px;
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
+    gap: 20px;
 }
-.main-nav li {
-    margin: 0 15px;
-}
-.main-nav a {
-    color: white;
+nav a {
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 15px;
 }
-.main-nav a.active {
-    text-decoration: underline;
+nav a:hover {
+    color: #fca311;
 }
-main.rekrutacja {
-    padding: 2rem;
+main {
+    padding: 30px;
 }
-section.role {
-    background: white;
-    margin: 1rem 0;
-    padding: 1.5rem;
+.welcome {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-section.role h2 {
+.info-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.info-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
+}
+.info-box h2 {
     margin-top: 0;
-}
-section.role ul {
-    padding-left: 20px;
-}
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #09336f;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-}
-footer {
-    background-color: #09336f;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    font-size: 20px;
+    color: #14213d;
 }
