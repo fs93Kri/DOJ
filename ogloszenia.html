@@ -1,28 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>Ogloszenia - DOJ</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ogłoszenia | DOJ San Andreas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #003366;
+            text-align: center;
+        }
+        .announcement {
+            border-bottom: 1px solid #ccc;
+            padding: 20px 0;
+        }
+        .announcement:last-child {
+            border-bottom: none;
+        }
+        .announcement h2 {
+            margin: 0;
+            color: #222;
+        }
+        .announcement p {
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-
-<div class="navbar">
-  <a href="index.html">Strona Główna</a>
-  <a href="ogloszenia.html">Ogłoszenia</a>
-  <a href="prawo.html">Prawo</a>
-  <a href="rekrutacja.html">Rekrutacja</a>
-  <a href="kadra.html">Kadra</a>
-  <a href="dokumenty.html">Dokumenty i Formularze</a>
-  <a href="sprawy_sadu.html">Sprawy Sądu</a>
-  <a href="api.html">DOJ API</a>
-  <a href="faq.html">FAQ</a>
-  <a href="kontakt.html">Kontakt</a>
-</div>
-
-
-<h2 style="text-align:center;">Ogloszenia</h2>
-<p style="padding: 20px;">Zawartość podstrony: Ogloszenia</p>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="ogloszenia.html">Ogłoszenia</a></li>
+                <li><a href="prawo.html">Prawo</a></li>
+                <li><a href="rekrutacja.html">Rekrutacja</a></li>
+                <li><a href="kadra.html">Kadra</a></li>
+                <li><a href="dokumenty.html">Dokumenty i Formularze</a></li>
+                <li><a href="sprawy.html">Sprawy Sądu</a></li>
+                <li><a href="api.html">DOJ API</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Ogłoszenia DOJ</h1>
+        <div class="announcement">
+            <h2>🔔 Nowy nabór do DOJ otwarty!</h2>
+            <p>Rozpoczynamy nową turę rekrutacji na stanowiska sędziów, prokuratorów i adwokatów. Zgłoszenia przyjmujemy przez formularz dostępny w zakładce „Rekrutacja”.</p>
+        </div>
+        <div class="announcement">
+            <h2>📜 Aktualizacja Kodeksu Karnego</h2>
+            <p>Z dniem 15 lipca 2025 wchodzi w życie nowa wersja Kodeksu Karnego. Zachęcamy do zapoznania się z dokumentem w zakładce „Prawo”.</p>
+        </div>
+    </main>
 </body>
 </html>
