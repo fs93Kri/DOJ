@@ -3,97 +3,55 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Akty Prawne - Department of Justice</title>
+    <title>Prawo - Department of Justice</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f7fc;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
         }
-
         header {
-            background-color: #0d3273;
-            color: white;
+            background-color: #003366;
             padding: 15px 0;
             text-align: center;
         }
-
-        nav {
-            background-color: #0d3273;
-            padding: 10px 0;
-            text-align: center;
-        }
-
         nav a {
             color: white;
+            margin: 0 20px;
             text-decoration: none;
-            margin: 0 15px;
             font-weight: bold;
+            font-size: 16px;
         }
-
         nav a:hover {
             text-decoration: underline;
         }
-
-        main {
-            padding: 40px 60px;
-            background-color: #f4f7fc;
+        .container {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
         }
-
         h1 {
             text-align: center;
-            color: #0d3273;
+            color: #003366;
         }
-
-        p.description {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 1.1em;
-        }
-
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 0 auto;
-            max-width: 1000px;
+            margin-top: 30px;
         }
-
         th, td {
-            padding: 15px;
+            padding: 14px;
+            border: 1px solid #ccc;
             text-align: left;
-            font-size: 16px;
+            vertical-align: middle;
         }
-
-        th {
-            background-color: #e3eaf3;
-            color: #0d3273;
-            font-size: 18px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f0f4f9;
-        }
-
-        tr:nth-child(odd) {
-            background-color: #ffffff;
-        }
-
-        footer {
-            background-color: #0d3273;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
-
-        a.document-link {
-            color: #0d3273;
-            font-weight: bold;
+        td a {
             text-decoration: none;
+            color: #003366;
+            font-weight: bold;
         }
-
-        a.document-link:hover {
+        td a:hover {
             text-decoration: underline;
         }
     </style>
@@ -113,54 +71,42 @@
             <a href="kontakt.html">Kontakt</a>
         </nav>
     </header>
-    <main>
+    <div class="container">
         <h1>Akty Prawne</h1>
-        <p class="description">Wszystkie dokumenty dostępne są zarówno w pełnej wersji, jak i w wersji skróconej „w pigułce”.</p>
         <table>
-            <thead>
-                <tr>
-                    <th>Pełny dokument</th>
-                    <th>Wersja w pigułce</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a class="document-link" href="konstytucja.html" target="_blank">Konstytucja</a></td>
-                    <td><a class="document-link" href="konstytucja_pigulka.html" target="_blank">Konstytucja w Pigułce</a></td>
-                </tr>
-                <tr>
-                    <td><a class="document-link" href="kodeks_karny.html" target="_blank">Kodeks Karny</a></td>
-                    <td><a class="document-link" href="kodeks_karny_pigulka.html" target="_blank">Kodeks Karny w Pigułce</a></td>
-                </tr>
-                <tr>
-                    <td><a class="document-link" href="kodeks_cywilny.html" target="_blank">Kodeks Cywilny</a></td>
-                    <td><a class="document-link" href="kodeks_cywilny_pigulka.html" target="_blank">Kodeks Cywilny w Pigułce</a></td>
-                </tr>
-                <tr>
-                    <td><a class="document-link" href="kpc.html" target="_blank">Kodeks Postępowania Cywilnego</a></td>
-                    <td><a class="document-link" href="kpc_pigulka.html" target="_blank">Kodeks Postępowania Cywilnego w Pigułce</a></td>
-                </tr>
-                <tr>
-                    <td><a class="document-link" href="kodeks_pracy.html" target="_blank">Kodeks Pracy</a></td>
-                    <td><a class="document-link" href="kodeks_pracy_pigulka.html" target="_blank">Kodeks Pracy w Pigułce</a></td>
-                </tr>
-                <tr>
-                    <td><a class="document-link" href="ustawa_sluzby.html" target="_blank">Ustawa o Służbach Publicznych</a></td>
-                    <td><a class="document-link" href="ustawa_sluzby_pigulka.html" target="_blank">Ustawa o Służbach Publicznych w Pigułce</a></td>
-                </tr>
-                <tr>
-                    <td><a class="document-link" href="ustawa_bron.html" target="_blank">Ustawa o Broni i Amunicji</a></td>
-                    <td><a class="document-link" href="ustawa_bron_pigulka.html" target="_blank">Ustawa o Broni i Amunicji w Pigułce</a></td>
-                </tr>
-                <tr>
-                    <td><a class="document-link" href="kodeks_morski.html" target="_blank">Kodeks Morski</a></td>
-                    <td><a class="document-link" href="kodeks_morski_pigulka.html" target="_blank">Kodeks Morski w Pigułce</a></td>
-                </tr>
-            </tbody>
+            <tr>
+                <td><a href="konstytucja.html" target="_blank">Konstytucja</a></td>
+                <td><a href="#">Konstytucja w Pigułce</a></td>
+            </tr>
+            <tr>
+                <td><a href="kodeks_karny.html" target="_blank">Kodeks Karny</a></td>
+                <td><a href="#">Kodeks Karny w Pigułce</a></td>
+            </tr>
+            <tr>
+                <td><a href="kodeks_cywilny.html" target="_blank">Kodeks Cywilny</a></td>
+                <td><a href="#">Kodeks Cywilny w Pigułce</a></td>
+            </tr>
+            <tr>
+                <td><a href="kodeks_postepowania_cywilnego.html" target="_blank">Kodeks Postępowania Cywilnego</a></td>
+                <td><a href="#">Kodeks Postępowania Cywilnego w Pigułce</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Kodeks Pracy</a></td>
+                <td><a href="#">Kodeks Pracy w Pigułce</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Ustawa o Służbach Publicznych</a></td>
+                <td><a href="#">Ustawa o Służbach Publicznych w Pigułce</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Ustawa o Broni i Amunicji</a></td>
+                <td><a href="#">Ustawa o Broni i Amunicji w Pigułce</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Kodeks Morski</a></td>
+                <td><a href="#">Kodeks Morski w Pigułce</a></td>
+            </tr>
         </table>
-    </main>
-    <footer>
-        © 2025 Department of Justice — San Andreas RP
-    </footer>
+    </div>
 </body>
 </html>
