@@ -1,170 +1,137 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Department of Justice - San Andreas</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f2f5fb;
-            color: #111;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Strona Główna - DOJ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+    }
 
-        nav {
-            background-color: #0a3d7a;
-            padding: 10px 0;
-            text-align: center;
-        }
+    .navbar {
+      background-color: #003366;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 0;
+    }
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 14px;
-        }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    .navbar a:hover {
+      text-decoration: underline;
+    }
 
-        .container {
-            padding: 30px 5%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 40px;
-        }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
 
-        .description, .structure, .competence {
-            max-width: 1000px;
-            width: 100%;
-        }
+    h1 {
+      text-align: center;
+      color: #222;
+    }
 
-        .description {
-            text-align: center;
-            font-size: 18px;
-            line-height: 1.6;
-            border-left: 4px solid crimson;
-            border-right: 4px solid crimson;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
 
-        .structure h2, .competence h2 {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
+    .column {
+      flex: 1;
+      min-width: 280px;
+      margin: 10px;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
 
-        .structure-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-        }
+    .structure {
+      text-align: center;
+      margin-top: 50px;
+    }
 
-        .structure-item {
-            background-color: #f5f5f5;
-            padding: 15px 20px;
-            border-radius: 6px;
-            min-width: 220px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            text-align: center;
-            font-weight: 500;
-        }
+    .structure h2 {
+      font-size: 28px;
+    }
 
-        .quote {
-            background-color: #d5d5d5;
-            text-align: center;
-            padding: 20px;
-            font-weight: bold;
-            font-size: 20px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-        }
+    .structure-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
 
-        .competence ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-
-        .competence li {
-            margin: 10px 0;
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                font-size: 13px;
-            }
-
-            .structure-grid {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .structure-item {
-                width: 100%;
-            }
-        }
-    </style>
+    .structure-box {
+      background-color: #f1f1f1;
+      padding: 12px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
+  <div class="navbar">
+    <a href="index.html">Strona Główna</a>
+    <a href="ogloszenia.html">Ogłoszenia</a>
+    <a href="prawo.html">Prawo</a>
+    <a href="rekrutacja.html">Rekrutacja</a>
+    <a href="kadra.html">Kadra</a>
+    <a href="dokumenty.html">Dokumenty i Formularze</a>
+    <a href="sprawy.html">Sprawy Sądu</a>
+    <a href="api.html">DOJ API</a>
+    <a href="faq.html">FAQ</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
 
-<nav>
-    <a href="#">Strona Główna</a>
-    <a href="#">Ogłoszenia</a>
-    <a href="#">Prawo</a>
-    <a href="#">Rekrutacja</a>
-    <a href="#">Kadra</a>
-    <a href="#">Dokumenty i Formularze</a>
-    <a href="#">Sprawy Sądu</a>
-    <a href="#">DOJ API</a>
-    <a href="#">FAQ</a>
-    <a href="#">Kontakt</a>
-</nav>
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <h3>O DOJ</h3>
+        <p>Department of Justice (DOJ) to najwyższy organ odpowiedzialny za nadzór nad przestrzeganiem prawa, sprawiedliwości oraz konstytucyjnych praw obywateli w stanie San Andreas. DOJ pełni kluczową rolę w zapewnianiu praworządności, koordynowaniu działalności organów wymiaru sprawiedliwości oraz kształtowaniu systemu legislacyjnego.</p>
+      </div>
 
-<div class="container">
-    <div class="description">
-        Department of Justice (DOJ) to najwyższy organ odpowiedzialny za nadzór nad przestrzeganiem prawa, sprawiedliwości oraz konstytucyjnych praw obywateli w stanie San Andreas.
-        DOJ pełni kluczową rolę w zapewnianiu praworządności, koordynowaniu działalności organów wymiaru sprawiedliwości oraz kształtowaniu systemu legislacyjnego.
+      <div class="column">
+        <h3>Kompetencje DOJ</h3>
+        <ul>
+          <li>Nadzór nad sędziami</li>
+          <li>Reprezentowanie Państwa</li>
+          <li>Koordynacja prokuratury</li>
+          <li>Egzekwowanie prawa</li>
+          <li>Legislacja i interpretacja prawa</li>
+          <li>Prawa obywatelskie</li>
+          <li>Prawa konstytucyjne</li>
+          <li>Rejestry publiczne</li>
+        </ul>
+      </div>
     </div>
 
     <div class="structure">
-        <h2>Struktura</h2>
-        <div class="structure-grid">
-            <div class="structure-item">Prokurator Generalny Stanu San Andreas</div>
-            <div class="structure-item">Zastępcy Prokuratora Generalnego</div>
-            <div class="structure-item">Departament Spraw Cywilnych</div>
-            <div class="structure-item">Departament Spraw Karnych</div>
-            <div class="structure-item">Departament Nadzoru i Etyki</div>
-            <div class="structure-item">Biuro Legislacyjne</div>
-            <div class="structure-item">Wydział Ochrony Praw Obywatelskich</div>
-        </div>
+      <h2>Struktura</h2>
+      <div class="structure-grid">
+        <div class="structure-box">Prokurator Generalny Stanu San Andreas</div>
+        <div class="structure-box">Zastępcy Prokuratora Generalnego</div>
+        <div class="structure-box">Departament Spraw Cywilnych</div>
+        <div class="structure-box">Departament Spraw Karnych</div>
+        <div class="structure-box">Departament Nadzoru i Etyki</div>
+        <div class="structure-box">Biuro Legislacyjne</div>
+        <div class="structure-box">Wydział Ochrony Praw Obywatelskich</div>
+      </div>
+      <blockquote style="margin-top: 30px; font-weight: bold;">„Zapewnić równość wobec prawa, niezależność sądownictwa i sprawiedliwość dla każdego obywatela stanu San Andreas.”</blockquote>
     </div>
-
-    <div class="quote">
-        „Zapewnić równość wobec prawa, niezależność sądownictwa i sprawiedliwość dla każdego obywatela stanu San Andreas.”
-    </div>
-
-    <div class="competence">
-        <h2>Kompetencje DOJ</h2>
-        <ul>
-            <li>Nadzór nad sądami</li>
-            <li>Reprezentowanie Państwa</li>
-            <li>Koordynacja prokuratury</li>
-            <li>Egzekwowanie prawa</li>
-            <li>Legislacja i interpretacja prawa</li>
-            <li>Prawa obywatelskie</li>
-            <li>Prawa konstytucyjne</li>
-            <li>Rejestry publiczne</li>
-        </ul>
-    </div>
-</div>
-
+  </div>
 </body>
 </html>
