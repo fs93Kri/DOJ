@@ -4,64 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rekrutacja | Department of Justice</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Rekrutacja - DOJ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0066cc;
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #004c99;
+        }
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #003366;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
-    <header style="background-color: #004080; padding: 20px 0; text-align: center;">
-        <nav>
-            <ul style="list-style: none; display: flex; justify-content: center; gap: 30px; margin: 0; padding: 0; color: white;">
-                <li><a href="index.html" style="color: white; text-decoration: none;">Strona Główna</a></li>
-                <li><a href="ogloszenia.html" style="color: white; text-decoration: none;">Ogłoszenia</a></li>
-                <li><a href="prawo.html" style="color: white; text-decoration: none;">Prawo</a></li>
-                <li><a href="rekrutacja.html" style="color: white; text-decoration: none;">Rekrutacja</a></li>
-                <li><a href="kadra.html" style="color: white; text-decoration: none;">Kadra</a></li>
-                <li><a href="dokumenty.html" style="color: white; text-decoration: none;">Dokumenty i Formularze</a></li>
-                <li><a href="sprawy.html" style="color: white; text-decoration: none;">Sprawy Sądu</a></li>
-                <li><a href="api.html" style="color: white; text-decoration: none;">DOJ API</a></li>
-                <li><a href="faq.html" style="color: white; text-decoration: none;">FAQ</a></li>
-                <li><a href="kontakt.html" style="color: white; text-decoration: none;">Kontakt</a></li>
-            </ul>
-        </nav>
+    <header>
+        <h1>Department of Justice - Rekrutacja</h1>
     </header>
-
-    <main style="padding: 40px; max-width: 1000px; margin: auto;">
-        <h1 style="color: #004080; text-align: center;">Rekrutacja do Department of Justice</h1>
-        <p style="font-size: 18px; margin-bottom: 30px;">
-            Department of Justice prowadzi ciągły nabór do swoich struktur. Szukamy osób odpowiedzialnych, rzetelnych oraz zainteresowanych prawem i sądownictwem.
-        </p>
-
-        <section>
-            <h2>Jak aplikować?</h2>
-            <ul>
-                <li>Wypełnij formularz rekrutacyjny dostępny w zakładce „Dokumenty i Formularze”.</li>
-                <li>Oczekuj na kontakt ze strony DOJ – przeprowadzimy rozmowę IC oraz OOC.</li>
-                <li>Po pozytywnym przejściu rozmowy zostaniesz przypisany do szkolenia wstępnego.</li>
-            </ul>
-        </section>
-
-        <section style="margin-top: 40px;">
-            <h2>Wymagania ogólne</h2>
-            <ul>
-                <li>Podstawowa znajomość systemu prawnego (Kodeks Cywilny, Karny, Procedury)</li>
-                <li>Wysoka kultura osobista</li>
-                <li>Umiejętność pracy w zespole</li>
-                <li>Zaangażowanie i chęć nauki</li>
-            </ul>
-        </section>
-
-        <section style="margin-top: 40px;">
-            <h2>Stanowiska, na które prowadzimy nabór</h2>
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="ogloszenia.html">Ogłoszenia</a>
+        <a href="prawo.html">Prawo</a>
+        <a href="rekrutacja.html">Rekrutacja</a>
+        <a href="kadra.html">Kadra</a>
+        <a href="dokumenty.html">Dokumenty i Formularze</a>
+        <a href="sprawy.html">Sprawy Sądu</a>
+        <a href="api.html">DOJ API</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <main>
+        <div class="section">
+            <h2>Jak dołączyć do DOJ?</h2>
+            <p>Aby zostać częścią Department of Justice, wypełnij formularz rekrutacyjny dostępny na stronie. Po przesłaniu formularza zostaniesz zaproszony na rozmowę kwalifikacyjną IC oraz OOC.</p>
+        </div>
+        <div class="section">
+            <h2>Wymagania</h2>
+            <p>Kandydat powinien posiadać podstawową wiedzę z zakresu prawa cywilnego, karnego oraz procedury sądowej. Doświadczenie RP i chęć rozwoju są mile widziane.</p>
+        </div>
+        <div class="section">
+            <h2>Dostępne stanowiska</h2>
             <ul>
                 <li>Sędzia</li>
                 <li>Prokurator</li>
                 <li>Adwokat</li>
+                <li>Asystent Prawny</li>
             </ul>
-        </section>
+        </div>
     </main>
-
-    <footer style="text-align: center; padding: 20px; background-color: #f2f2f2;">
-        &copy; 2025 Department of Justice — San Andreas
-    </footer>
 </body>
 </html>
