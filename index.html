@@ -3,61 +3,174 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Department of Justice - Strona Główna</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
-            background-color: #f4f7fa;
+            background-color: #f4f6fa;
+            color: #1a1a1a;
         }
+
         header {
-            background-color: #004080;
-            padding: 15px 0;
-            text-align: center;
+            background-color: #003366;
+            padding: 10px 0;
         }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
         nav a {
             color: white;
-            margin: 0 15px;
             text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
+            margin: 10px 15px;
+            font-weight: 500;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
         .container {
-            padding: 30px;
-            max-width: 1000px;
-            margin: auto;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin-top: 30px;
-            border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            gap: 30px;
         }
-        h1 {
-            color: #333;
+
+        .column {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .quote {
+            background-color: white;
+            padding: 20px;
+            border-left: 5px solid #cc0000;
+            border-right: 5px solid #cc0000;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .structure h2 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .structure-box {
+            background-color: #ccc;
+            padding: 15px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .structure-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            text-align: center;
+        }
+
+        .structure-list div {
+            background-color: #eee;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .competence h3 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .competence ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .competence li {
+            padding: 5px 0;
+            font-size: 15px;
+        }
+
+        .mission {
+            text-align: center;
+            margin: 40px 20px;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: #ddd;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Strona Główna</a>
-            <a href="ogloszenia.html">Ogłoszenia</a>
-            <a href="prawo.html">Prawo</a>
-            <a href="rekrutacja.html">Rekrutacja</a>
-            <a href="kadra.html">Kadra</a>
-            <a href="dokumenty.html">Dokumenty i Formularze</a>
-            <a href="sprawy_sadu.html">Sprawy Sądu</a>
-            <a href="doj_api.html">DOJ API</a>
-            <a href="faq.html">FAQ</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav>
-    </header>
-    <div class="container">
-        <h1>Witamy na stronie Department of Justice</h1>
-        <p>To jest oficjalna strona Departamentu Sprawiedliwości stanu San Andreas. Znajdziesz tu wszystkie niezbędne informacje dotyczące prawa, kadry, rekrutacji, dokumentów oraz procedur sądowych.</p>
+
+<header>
+    <nav>
+        <a href="#">Strona Główna</a>
+        <a href="#">Ogłoszenia</a>
+        <a href="#">Prawo</a>
+        <a href="#">Rekrutacja</a>
+        <a href="#">Kadra</a>
+        <a href="#">Dokumenty i Formularze</a>
+        <a href="#">Sprawy Sądu</a>
+        <a href="#">DOJ API</a>
+        <a href="#">FAQ</a>
+        <a href="#">Kontakt</a>
+    </nav>
+</header>
+
+<main class="container">
+    <div class="column">
+        <div class="quote">
+            Department of Justice (DOJ) to najwyższy organ odpowiedzialny za nadzór nad przestrzeganiem prawa, sprawiedliwości oraz konstytucyjnych praw obywateli w stanie San Andreas. DOJ pełni kluczową rolę w zapewnianiu praworządności, koordynowaniu działalności organów wymiaru sprawiedliwości oraz kształtowaniu systemu legislacyjnego.
+        </div>
     </div>
+
+    <div class="column structure">
+        <h2>Struktura</h2>
+        <div class="structure-box">Prokurator Generalny Stanu San Andreas</div>
+        <div class="structure-box">Zastępcy Prokuratora Generalnego</div>
+        <div class="structure-list">
+            <div>Departament Spraw Cywilnych</div>
+            <div>Departament Spraw Karnych</div>
+            <div>Departament Nadzoru i Etyki</div>
+            <div>Biuro Legislacyjne</div>
+            <div>Wydział Ochrony Praw Obywatelskich</div>
+        </div>
+    </div>
+
+    <div class="column competence">
+        <h3>Kompetencje DOJ</h3>
+        <ul>
+            <li>Nadzór nad sądami</li>
+            <li>Reprezentowanie Państwa</li>
+            <li>Koordynacja prokuratury</li>
+            <li>Egzekwowanie prawa</li>
+            <li>Legislacja i interpretacja prawa</li>
+            <li>Prawa obywatelskie</li>
+            <li>Prawa konstytucyjne</li>
+            <li>Rejestry publiczne</li>
+        </ul>
+    </div>
+</main>
+
+<div class="mission">
+    „Zapewnić równość wobec prawa, niezależność sądownictwa i sprawiedliwość dla każdego obywatela stanu San Andreas.”
+</div>
+
 </body>
 </html>
