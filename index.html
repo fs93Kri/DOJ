@@ -2,174 +2,99 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Department of Justice - Strona Główna</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f6fa;
-            color: #1a1a1a;
-        }
-
-        header {
-            background-color: #003366;
-            padding: 10px 0;
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 10px 15px;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 0 20px;
-            gap: 30px;
-        }
-
-        .column {
-            flex: 1;
-            min-width: 280px;
-        }
-
-        .quote {
-            background-color: white;
-            padding: 20px;
-            border-left: 5px solid #cc0000;
-            border-right: 5px solid #cc0000;
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        .structure h2 {
-            font-family: 'Playfair Display', serif;
-            text-align: center;
-            font-size: 32px;
-        }
-
-        .structure-box {
-            background-color: #ccc;
-            padding: 15px;
-            margin-bottom: 10px;
-            text-align: center;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .structure-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
-            text-align: center;
-        }
-
-        .structure-list div {
-            background-color: #eee;
-            padding: 10px;
-            font-size: 14px;
-        }
-
-        .competence h3 {
-            font-family: 'Playfair Display', serif;
-            text-align: center;
-            font-size: 24px;
-        }
-
-        .competence ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-
-        .competence li {
-            padding: 5px 0;
-            font-size: 15px;
-        }
-
-        .mission {
-            text-align: center;
-            margin: 40px 20px;
-            font-weight: bold;
-            font-size: 18px;
-            background-color: #ddd;
-            padding: 20px;
-            font-family: 'Roboto', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Strona Główna DOJ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f8fc;
+      color: #222;
+    }
+    header {
+      background-color: #0a3d91;
+      padding: 10px 0;
+    }
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2em;
+    }
+    .structure-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .structure-item {
+      background-color: #f2f2f2;
+      padding: 15px 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+      text-align: center;
+      min-width: 260px;
+      flex: 1 1 250px;
+    }
+    @media (max-width: 600px) {
+      .structure-item {
+        min-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <nav>
-        <a href="#">Strona Główna</a>
-        <a href="#">Ogłoszenia</a>
-        <a href="#">Prawo</a>
-        <a href="#">Rekrutacja</a>
-        <a href="#">Kadra</a>
-        <a href="#">Dokumenty i Formularze</a>
-        <a href="#">Sprawy Sądu</a>
-        <a href="#">DOJ API</a>
-        <a href="#">FAQ</a>
-        <a href="#">Kontakt</a>
-    </nav>
+  <nav>
+    <a href="#">Strona Główna</a>
+    <a href="#">Ogłoszenia</a>
+    <a href="#">Prawo</a>
+    <a href="#">Rekrutacja</a>
+    <a href="#">Kadra</a>
+    <a href="#">Dokumenty i Formularze</a>
+    <a href="#">Sprawy Sądu</a>
+    <a href="#">DOJ API</a>
+    <a href="#">FAQ</a>
+    <a href="#">Kontakt</a>
+  </nav>
 </header>
 
-<main class="container">
-    <div class="column">
-        <div class="quote">
-            Department of Justice (DOJ) to najwyższy organ odpowiedzialny za nadzór nad przestrzeganiem prawa, sprawiedliwości oraz konstytucyjnych praw obywateli w stanie San Andreas. DOJ pełni kluczową rolę w zapewnianiu praworządności, koordynowaniu działalności organów wymiaru sprawiedliwości oraz kształtowaniu systemu legislacyjnego.
-        </div>
+<div class="container">
+  <div class="section">
+    <h2>Struktura</h2>
+    <div class="structure-grid">
+      <div class="structure-item"><strong>Prokurator Generalny Stanu San Andreas</strong></div>
+      <div class="structure-item"><strong>Zastępcy Prokuratora Generalnego</strong></div>
+      <div class="structure-item">Departament Spraw Cywilnych</div>
+      <div class="structure-item">Departament Spraw Karnych</div>
+      <div class="structure-item">Departament Nadzoru i Etyki</div>
+      <div class="structure-item">Biuro Legislacyjne</div>
+      <div class="structure-item">Wydział Ochrony Praw Obywatelskich</div>
     </div>
-
-    <div class="column structure">
-        <h2>Struktura</h2>
-        <div class="structure-box">Prokurator Generalny Stanu San Andreas</div>
-        <div class="structure-box">Zastępcy Prokuratora Generalnego</div>
-        <div class="structure-list">
-            <div>Departament Spraw Cywilnych</div>
-            <div>Departament Spraw Karnych</div>
-            <div>Departament Nadzoru i Etyki</div>
-            <div>Biuro Legislacyjne</div>
-            <div>Wydział Ochrony Praw Obywatelskich</div>
-        </div>
-    </div>
-
-    <div class="column competence">
-        <h3>Kompetencje DOJ</h3>
-        <ul>
-            <li>Nadzór nad sądami</li>
-            <li>Reprezentowanie Państwa</li>
-            <li>Koordynacja prokuratury</li>
-            <li>Egzekwowanie prawa</li>
-            <li>Legislacja i interpretacja prawa</li>
-            <li>Prawa obywatelskie</li>
-            <li>Prawa konstytucyjne</li>
-            <li>Rejestry publiczne</li>
-        </ul>
-    </div>
-</main>
-
-<div class="mission">
-    „Zapewnić równość wobec prawa, niezależność sądownictwa i sprawiedliwość dla każdego obywatela stanu San Andreas.”
+  </div>
 </div>
 
 </body>
